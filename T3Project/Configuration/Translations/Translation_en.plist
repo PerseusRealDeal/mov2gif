@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Product Name</key>
+	<string>Branch macOS</string>
+	<key>Greetings</key>
+	<string>Hello world!</string>
+	<key>Exit</key>
+	<string>Exit</string>
+	<key>Settings...</key>
+	<string>Settings...</string>
+	<key>Preferences...</key>
+	<string>Preferences...</string>
+</dict>
+</plist>

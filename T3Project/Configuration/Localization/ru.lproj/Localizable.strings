@@ -1,0 +1,16 @@
+/*
+ Localizable.strings (Russian)
+ T3Project
+
+ Created by Mikhail A. Zhigulin of Novosibirsk.
+
+ Unlicensed Free Software.
+*/
+
+/* The name of executable file is > target > build settings > product name */
+
+"Product Name" = "Ветка macOS";
+"Greetings" = "Рады приветствовать!";
+"Exit" = "Завершить работу";
+"Settings..." = "";
+"Preferences..." = "";
