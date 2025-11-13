@@ -29,7 +29,7 @@
   "testTargets" : [
     {
       "target" : {
-        "containerPath" : "container:T3Project.xcodeproj",
+        "containerPath" : "container:mov2gif.xcodeproj",
         "identifier" : "4B1483F22912892F0013B76E",
         "name" : "PerseusTests"
       }

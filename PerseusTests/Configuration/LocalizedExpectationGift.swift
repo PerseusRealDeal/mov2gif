@@ -9,7 +9,7 @@
 /* https://gist.github.com/perseusrealdeal/df456a9825fcface44eca738056eb6d5 */
 
 import Foundation
-@testable import Perseus
+@testable import mov2gif
 
 // Customer requirements for localization.
 

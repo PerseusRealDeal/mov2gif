@@ -1,34 +1,21 @@
-# Approbation Matrix / App's Name
+# Approbation Matrix / mov2gif
 
 > Build System: macOS Monterey 12.7.6 / Xcode 14.2
 
 ## macOS
 
-> Approbated capability: Logging<br/>
+> Approbated capability: ...<br/>
 
 | macOS       | Version  | CPL | Details |
 | ----------- | -------- | --- | ------- |
-| High Sierra | 10.13.6  | ok  | -       |
-| Mojave      | 10.14.6  | ok  | -       |
-| Catalina    | 10.15.7  | ok  | -       |
-| Big Sur     | 11.7.10  | ok  | -       |
-| Monterey    | 12.7.6   | ok  | -       |
-| Ventura     | 13.7.4   | ok  | -       |
-| Sonoma      | 14.7.4   | ok  | -       |
-| Sequoia     | 15.3.1   | ok  | -       |
-
-> Approbated capability: Dark Mode<br/>
-
-| macOS       | Version  | PDM | Details |
-| ----------- | -------- | --- | ------- |
-| High Sierra | 10.13.6  | ok  | -       |
-| Mojave      | 10.14.6  | ok  | -       |
-| Catalina    | 10.15.7  | ok  | -       |
-| Big Sur     | 11.7.10  | ok  | -       |
-| Monterey    | 12.7.6   | ok  | -       |
-| Ventura     | 13.7.4   | ok  | -       |
-| Sonoma      | 14.7.4   | ok  | -       |
-| Sequoia     | 15.3.1   | ok  | -       |
+| High Sierra | 10.13.6  | ??  | -       |
+| Mojave      | 10.14.6  | ??  | -       |
+| Catalina    | 10.15.7  | ??  | -       |
+| Big Sur     | 11.7.10  | ??  | -       |
+| Monterey    | 12.7.6   | ??  | -       |
+| Ventura     | 13.7.4   | ??  | -       |
+| Sonoma      | 14.7.4   | ??  | -       |
+| Sequoia     | 15.3.1   | ??  | -       |
 
 ## A3 environment
 
