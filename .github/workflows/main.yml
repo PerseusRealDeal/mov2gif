@@ -3,27 +3,27 @@ name: Build & Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 #  schedule:
 #    - cron: '30 5 * * 5'
 
 jobs:
 
   build:
-    runs-on: macos-15
+    runs-on: macos-latest
     steps:
     - name: Checkout the code
       uses: actions/checkout@v4
-    - name: Select Xcode 16.2
-      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
+#    - name: Select Xcode 16.2
+#      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
     - name: Show buildable schemes
-      run: xcodebuild -list -project ./T3Project.xcodeproj
+      run: xcodebuild -list -project ./mov2gif.xcodeproj
     - uses: mxcl/xcodebuild@v3
       with:
         platform: macOS
-        scheme: 'T3Project'
+        scheme: 'Convertor'
         action: build
 #        working-directory: ./DarkModeDiscovery
         verbosity: xcpretty
@@ -31,20 +31,20 @@ jobs:
         configuration: Release
 
   unit-tests:
-    runs-on: macos-15
+    runs-on: macos-latest
     steps:
     - name: Checkout the code
       uses: actions/checkout@v4
 #    - name: SwiftLint
 #        run: brew link --overwrite swiftlint || brew install swiftlint
-    - name: Select Xcode 16.2
-      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
+#    - name: Select Xcode 16.2
+#      run: sudo xcode-select -s "/Applications/Xcode_16.2.app"
     - name: Show buildable schemes
-      run: xcodebuild -list -project ./T3Project.xcodeproj
+      run: xcodebuild -list -project ./mov2gif.xcodeproj
     - uses: mxcl/xcodebuild@v3
       with:
         platform: macOS
-        scheme: 'T3Project'
+        scheme: 'Convertor'
         action: test
 #        working-directory: ./DarkModeDiscovery
         verbosity: xcpretty

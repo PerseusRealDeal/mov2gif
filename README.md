@@ -1,15 +1,17 @@
-# <App's Name> — Xcode 14.2+
+# mov2gif — Xcode 14.2+
 
-[![Actions Status](https://github.com/perseusrealdeal/thetechnologicaltree/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/thetechnologicaltree/actions/workflows/main.yml)
-[![Style](https://github.com/perseusrealdeal/thetechnologicaltree/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/thetechnologicaltree/actions/workflows/swiftlint.yml)
+[![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
+[![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
 ![Version](https://img.shields.io/badge/Version-0.0.1-green.svg)
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode](https://img.shields.io/badge/Xcode-14.2+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift](https://img.shields.io/badge/Swift-5-orange.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
 [![SDK](https://img.shields.io/badge/SDK-UIKit%20-blueviolet.svg)](https://developer.apple.com/documentation/uikit)
-[![License](http://img.shields.io/:License-Unlicense-green.svg)](/LICENSE)
+[![License](http://img.shields.io/:License-Clear_BSD-blue.svg)](/LICENSE)
 
-This is the custom project template for a great macOS app.
+> This is the great macOS app project to accomplish `.mov to .gif file conversion` task.
+
+> `For details:` [`Approbation and A3 Environment`](/APPROBATION.md) / [`CHANGELOG`](/CHANGELOG.md)
 
 ## Dependencies
 
@@ -17,14 +19,6 @@ This is the custom project template for a great macOS app.
 
 [![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.6.0-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
 [![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.1.0-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
-
-> May be interesting to add: 
-
-[![PerseusGeoKit](http://img.shields.io/:PerseusGeoKit-1.1.0-green.svg)](https://github.com/perseusrealdeal/PerseusGeoKit.git)
-
-## Approbation Matrix
-
-> `For details:` [`Approbation and A3 Environment`](/APPROBATION.md) / [`CHANGELOG`](/CHANGELOG.md)
 
 ## Our Terms
 
@@ -37,9 +31,9 @@ This is the custom project template for a great macOS app.
 
 # Contents
 
-* [In brief, Idea to use, the Why](#In-brief,-Idea-to-use,-the-Why)
+* [The Why](#The-Why)
 * [Build requirements](#Build-requirements)
-* [Templated software requirements](#Templated-software-requirements)
+* [Software requirements](#Software-requirements)
 * [Gifts](#Gifts)
 * [First-party software](#First-party-software)
 * [Third-party software](#Third-party-software)
@@ -47,9 +41,9 @@ This is the custom project template for a great macOS app.
 * [License](#License)
     * [Other Required Licenses Details](#Other-Required-Licenses-Details)
 * [Credits](#Credits)
-* [Authors, editors, prepared by](#Authors,-editors,-prepared-by)
+* [Author](#Author)
 
-# In brief, Idea to use, the Why
+# The Why
 
 > The initial point of development process.
 
@@ -60,7 +54,7 @@ This is the custom project template for a great macOS app.
 
 - [macOS Monterey 12.7.6+](https://apps.apple.com/by/app/macos-monterey/id1576738294) / [Xcode 14.2+](https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_14.2/Xcode_14.2.xip)
 
-# Templated software requirements
+# Software requirements
 
 - [`Functional Specification`](/REQUIREMENTS.md)
 - Translations [EN](/T3Project/Configuration/Translations/Translation_en.plist), [RU](/T3Project/Configuration/Translations/Translation_ru.plist)
@@ -104,9 +98,15 @@ This is the custom project template for a great macOS app.
 - [Git Config](/.gitignore)
 - [CPL Config](/T3Project/Configuration/CPLConfig.json)
 
-# License
+# The Clear BSD License
 
-[License](/LICENSE): Unlicensed Free Software
+Copyright © 7534 Mikhail A. Zhigulin of Novosibirsk<br/>
+Copyright © 7534 PerseusRealDeal
+
+- The year starts from the creation of the world according to a Slavic calendar.
+- September, the 1st of Slavic year. It means that "Sep 01, 2025" is the beginning of 7534.
+
+[LICENSE](/LICENSE) for details.
 
 ## Other Required Licenses Details
 
@@ -121,25 +121,48 @@ This is the custom project template for a great macOS app.
 <tr>
     <td>Balance and Control</td>
     <td>kept by</td>
-    <td>Persons</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
 <tr>
     <td>Source Code</td>
     <td>written by</td>
-    <td>Persons</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
 <tr>
     <td>Documentation</td>
     <td>prepared by</td>
-    <td>Persons</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
 <tr>
     <td>Product Approbation</td>
     <td>tested by</td>
-    <td>Persons</td>
+    <td>Mikhail Zhigulin</td>
+</tr>
+<!--
+<tr>
+    <td>Artwork</td>
+    <td>expressed by</td>
+    <td>Mikhail Zhigulin of Novosibirsk</td>
+</tr>
+-->
+<tr>
+    <td>Russian Translation</td>
+    <td>prepared by</td>
+    <td>Mikhail Zhigulin</td>
+</tr>
+<tr>
+    <td>English Translation</td>
+    <td>prepared by</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
 </table>
 
-# Authors, editors, prepared by
+<!--
+- Artwork tool: [GIMP](https://www.gimp.org/) / [2.10.36](https://download.gimp.org/gimp/v2.10/osx/) for macOS 10.12 Sierra or newer
+-->
+- Language support: [Reverso](https://www.reverso.net/) 
+- Git clients: [SmartGit](https://syntevo.com/) and [GitHub Desktop](https://github.com/apps/desktop)
+
+# Author
 
 > © Mikhail A. Zhigulin of Novosibirsk

@@ -9,7 +9,7 @@ Unlicensed Free Software.
 
 -->
 
-# The App's Name:
+# The App's Name: mov2gif
 
 > TODO: Give it a name
 

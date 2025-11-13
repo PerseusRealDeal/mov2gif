@@ -8,7 +8,7 @@
 //
 
 import XCTest
-@testable import Perseus
+@testable import mov2gif
 
 // MARK: - The Testing Application Delegate
 

@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4B1483E02912892C0013B76E"
                BuildableName = "Perseus.app"
-               BlueprintName = "T3Project"
-               ReferencedContainer = "container:T3Project.xcodeproj">
+               BlueprintName = "mov2gif"
+               ReferencedContainer = "container:mov2gif.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,8 +32,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "Perseus.app"
-            BlueprintName = "T3Project"
-            ReferencedContainer = "container:T3Project.xcodeproj">
+            BlueprintName = "mov2gif"
+            ReferencedContainer = "container:mov2gif.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <TestPlans>
@@ -50,13 +50,13 @@
                BlueprintIdentifier = "4B1483F22912892F0013B76E"
                BuildableName = "PerseusTests.xctest"
                BlueprintName = "PerseusTests"
-               ReferencedContainer = "container:T3Project.xcodeproj">
+               ReferencedContainer = "container:mov2gif.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Release"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -71,8 +71,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "Perseus.app"
-            BlueprintName = "T3Project"
-            ReferencedContainer = "container:T3Project.xcodeproj">
+            BlueprintName = "mov2gif"
+            ReferencedContainer = "container:mov2gif.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4B1483E02912892C0013B76E"
             BuildableName = "Perseus.app"
-            BlueprintName = "T3Project"
-            ReferencedContainer = "container:T3Project.xcodeproj">
+            BlueprintName = "mov2gif"
+            ReferencedContainer = "container:mov2gif.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
