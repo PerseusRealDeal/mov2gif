@@ -1,5 +1,5 @@
 //
-//  MainWindowController.swift, MainWindowController.storyboard
+//  SelfieViewController.swift, SelfieWindowController.storyboard
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7532 (7.11.2025).
@@ -15,15 +15,15 @@
 
 import Cocoa
 
-extension MainWindowController {
+extension SelfieWindowController {
 
-    class func storyboardInstance() -> MainWindowController {
+    class func storyboardInstance() -> SelfieWindowController {
 
         let storyboard = NSStoryboard(name: String(describing: self), bundle: nil)
-        let screen = storyboard.instantiateInitialController() as? MainWindowController
+        let screen = storyboard.instantiateInitialController() as? SelfieWindowController
 
-        if let vc = screen?.contentViewController as? MainViewController {
-            vc.presenter = MainViewPresenter(view: vc)
+        if let vc = screen?.contentViewController as? SelfieViewController {
+            vc.presenter = SelfieViewPresenter(view: vc)
             vc.presenter?.viewDidLoad()
         }
 
@@ -32,25 +32,21 @@ extension MainWindowController {
         // screen?.modalTransitionStyle = UIModalTransitionStyle.partialCurl
         // screen?.view.backgroundColor = UIColor.yellow
 
-        return screen ?? MainWindowController()
+        return screen ?? SelfieWindowController()
     }
 }
 
-class MainWindowController: NSWindowController {
-
-    private lazy var selfie = { () -> SelfieWindowController in
-        return SelfieWindowController.storyboardInstance()
-    }()
-
-    // MARK: - Actions
-
-    @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
-        selfie.showWindow(sender)
-    }
+class SelfieWindowController: NSWindowController, NSWindowDelegate {
 
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        log.message("[\(type(of: self))].\(#function)")
+        // window?.appearance = NSAppearance(named: NSAppearance.Name.vibrantDark)
+        self.window?.title = AppGlobals.SystemServices.title
+    }
+
+    func windowShouldClose(_ sender: NSWindow) -> Bool {
+        self.window?.orderOut(sender)
+        return false
     }
 }

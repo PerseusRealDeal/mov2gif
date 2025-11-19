@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="aWf-Ue-Llq">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="DZA-gq-dmb">
+            <objects>
+                <windowController id="aWf-Ue-Llq" customClass="SelfieWindowController" customModule="mov2gif" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Options" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" titlebarAppearsTransparent="YES" id="3bI-iy-iR7">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="163" y="199" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1280" height="778"/>
+                        <connections>
+                            <outlet property="delegate" destination="aWf-Ue-Llq" id="wca-CV-Ff2"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="NdM-46-oIE" kind="relationship" relationship="window.shadowedContentViewController" id="Kco-19-hJE"/>
+                    </connections>
+                </windowController>
+                <customObject id="uu8-KA-eJO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="304"/>
+        </scene>
+        <!--Selfie View Controller-->
+        <scene sceneID="3ou-hb-cGC">
+            <objects>
+                <viewController id="NdM-46-oIE" customClass="SelfieViewController" customModule="mov2gif" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="Zo1-hM-qgJ">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="wub-Iw-l7t" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-122" y="766"/>
+        </scene>
+    </scenes>
+</document>
