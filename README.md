@@ -2,14 +2,14 @@
 
 [![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
 [![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
-![Version](https://img.shields.io/badge/Version-0.0.1-green.svg)
+![Version](https://img.shields.io/badge/Version-0.0.2-green.svg)
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode](https://img.shields.io/badge/Xcode-14.2+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift](https://img.shields.io/badge/Swift-5-orange.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
 [![SDK](https://img.shields.io/badge/SDK-UIKit%20-blueviolet.svg)](https://developer.apple.com/documentation/uikit)
 [![License](http://img.shields.io/:License-Clear_BSD-blue.svg)](/LICENSE)
 
-> This is the great macOS app project to accomplish `.mov to .gif file conversion` task.
+> This is the great home-made macOS app project to accomplish `.mov to .gif file conversion` task.
 
 > `For details:` [`Approbation and A3 Environment`](/APPROBATION.md) / [`CHANGELOG`](/CHANGELOG.md)
 
@@ -97,8 +97,11 @@
 - [SwiftLint Rules](/.swiftlint.yml)
 - [Git Config](/.gitignore)
 - [CPL Config](/T3Project/Configuration/CPLConfig.json)
+- SwiftLint shell script as a build phase (SwiftLint preinstallation required)
 
-# The Clear BSD License
+# License
+
+`License:` The Clear BSD License
 
 Copyright © 7534 Mikhail A. Zhigulin of Novosibirsk<br/>
 Copyright © 7534 PerseusRealDeal

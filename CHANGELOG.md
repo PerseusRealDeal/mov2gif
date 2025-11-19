@@ -5,6 +5,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Dates in this file meets Gregorian calendar. Date in format YYYY-MM-DD.
 
+## [0.0.2] - [2025-11-19], Developer Release
+
+### Added
+
+- Architectural points. MVP applied. Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
+
 ## [0.0.1] - [2025-11-13], Developer Beginning Release
 
 ### Added

@@ -13,13 +13,19 @@ import XCTest
 class LocalizationTests: XCTestCase {
 
     private var windowController: MainWindowController!
-    private var sut: ViewController!
+    private var sut: MainViewController!
+
+    private var presenter: MainViewPresenter!
 
     override func setUp() {
         super.setUp()
 
         windowController = MainWindowController.storyboardInstance()
-        sut = windowController.contentViewController as? ViewController
+        sut = windowController.contentViewController as? MainViewController
+
+        if let vc = sut {
+            presenter = MainViewPresenter(view: vc)
+        }
     }
 
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
@@ -30,6 +36,7 @@ class LocalizationTests: XCTestCase {
         // arrange
 
         sut.loadView()
+        presenter.viewDidLoad()
 
         // assert
 
