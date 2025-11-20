@@ -80,8 +80,8 @@
                     </view>
                     <connections>
                         <outlet property="buttonExit" destination="xUo-zX-8ec" id="7xN-bK-9Fk"/>
+                        <outlet property="controlDarkMode" destination="7r5-01-KsR" id="Fcu-Rd-sHB"/>
                         <outlet property="labelGreetings" destination="xJE-z7-zVW" id="cTV-wq-oz5"/>
-                        <outlet property="segmentedControl" destination="7r5-01-KsR" id="ujO-SX-XcW"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

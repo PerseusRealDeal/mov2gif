@@ -21,22 +21,6 @@ class MainViewController: NSViewController {
 
     var presenter: MainViewPresenter?
 
-    // MARK: - Outlets
-
-    @IBOutlet private(set) weak var buttonExit: NSButton!
-    @IBOutlet private(set) weak var labelGreetings: NSTextField!
-    @IBOutlet private(set) weak var segmentedControl: NSSegmentedControl!
-
-    // MARK: - Actions
-
-    @IBAction func segmentedControlValueChanged(_ sender: NSSegmentedControl) {
-        presenter?.changeDarkModeValue(selected: sender.selectedSegment)
-    }
-
-    @IBAction func buttonExitTapped(_ sender: NSButton) {
-        AppGlobals.quitTheApp()
-    }
-
     // MARK: - Life Circle
 
     override func viewDidLoad() {
@@ -51,13 +35,39 @@ class MainViewController: NSViewController {
         self.parent?.view.window?.title = self.title!
         presenter?.viewDidAppear()
     }
+
+    // MARK: - Outlets
+
+    @IBOutlet private(set) weak var buttonExit: NSButton!
+    @IBOutlet private(set) weak var labelGreetings: NSTextField!
+    @IBOutlet private(set) weak var controlDarkMode: NSSegmentedControl!
+
+    // MARK: - Actions
+
+    @IBAction func segmentedControlValueChanged(_ sender: NSSegmentedControl) {
+        presenter?.forceDarkMode(sender.selectedSegment)
+    }
+
+    @IBAction func buttonExitTapped(_ sender: NSButton) {
+        AppGlobals.quitTheApp()
+    }
 }
 
 // MARK: - MVP View
 
 extension MainViewController: MainViewDelegate {
 
+    // MARK: - MainViewDelegate
+
+    func onViewDidAppear() {
+        updateControlDarkMode()
+    }
+
     // MARK: - MVPViewDelegate
+
+    func setupUI() {
+        log.message("[\(type(of: self))].\(#function)")
+    }
 
     func makeUp() {
 
@@ -75,10 +85,23 @@ extension MainViewController: MainViewDelegate {
         labelGreetings.cell?.title = "Greetings".localizedValue
         buttonExit.title = "Exit".localizedValue
     }
+}
 
-    // MARK: - MainMVPViewDelegate
+// MARK: - Updates
 
-    func updateDarkModeOption(selected: Int) {
-        segmentedControl.selectedSegment = selected
+extension MainViewController {
+
+    private func updateControlDarkMode() {
+
+        log.message("[\(type(of: self))].\(#function) \(DarkModeAgent.DarkModeUserChoice)")
+
+        switch DarkModeAgent.DarkModeUserChoice {
+        case .auto:
+            controlDarkMode.selectedSegment = 2
+        case .on:
+            controlDarkMode.selectedSegment = 1
+        case .off:
+            controlDarkMode.selectedSegment = 0
+        }
     }
 }

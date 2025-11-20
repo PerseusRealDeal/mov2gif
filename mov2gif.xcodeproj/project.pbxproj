@@ -12,7 +12,7 @@
 		2E5E3FBF2CA2AC1C00D024AB /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */; };
 		2E67C6962ECC451B006BF7EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E67C6952ECC451B006BF7EE /* MainMenu.xib */; };
 		2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */; };
-		2E67C69A2ECCC04A006BF7EE /* MainWindowPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6992ECCC04A006BF7EE /* MainWindowPresenter.swift */; };
+		2E67C69A2ECCC04A006BF7EE /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */; };
 		2EAA4CB82DF2B45600E8E81A /* PDMSupportingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */; };
 		2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2942E2ECD9AEF00FC06F1 /* MVPPresenter.swift */; };
 		2EC294312ECD9B9700FC06F1 /* MVPViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC294302ECD9B9700FC06F1 /* MVPViewDelegate.swift */; };
@@ -68,7 +68,7 @@
 		2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swiftlint.yml; path = .github/workflows/swiftlint.yml; sourceTree = "<group>"; };
 		2E67C6952ECC451B006BF7EE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewPresenter.swift; sourceTree = "<group>"; };
-		2E67C6992ECCC04A006BF7EE /* MainWindowPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowPresenter.swift; sourceTree = "<group>"; };
+		2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
 		2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMSupportingStar.swift; sourceTree = "<group>"; };
 		2EAA4CB92DF2E14200E8E81A /* APPROBATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APPROBATION.md; sourceTree = "<group>"; };
 		2EB587422C9FB16A00D7B55B /* TestPlanStarted.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlanStarted.xctestplan; sourceTree = "<group>"; };
@@ -305,7 +305,7 @@
 				4B1483EA2912892F0013B76E /* MainWindowController.storyboard */,
 				4BBE905D29128FB1008F734D /* MainWindowController.swift */,
 				4B1483E62912892C0013B76E /* MainViewController.swift */,
-				2E67C6992ECCC04A006BF7EE /* MainWindowPresenter.swift */,
+				2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -464,7 +464,7 @@
 			files = (
 				4BFA5FDE2989A1F000AC09F5 /* SelfieViewController.swift in Sources */,
 				4B5921D22B6648CA00D312B9 /* JsonDataDictionaryGift.swift in Sources */,
-				2E67C69A2ECCC04A006BF7EE /* MainWindowPresenter.swift in Sources */,
+				2E67C69A2ECCC04A006BF7EE /* MainViewPresenter.swift in Sources */,
 				4BBE90672912931A008F734D /* main.swift in Sources */,
 				2EC294312ECD9B9700FC06F1 /* MVPViewDelegate.swift in Sources */,
 				4BFA5FDC2989A16400AC09F5 /* SelfieWindowController.swift in Sources */,

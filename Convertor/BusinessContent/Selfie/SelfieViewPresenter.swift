@@ -37,6 +37,8 @@ class SelfieViewPresenter: MVPPresenter {
 
         log.message("[\(type(of: self))].\(#function)")
 
+        view?.setupUI()
+
         view?.makeUp()
         view?.localize()
     }

@@ -47,7 +47,13 @@ class SelfieViewController: NSViewController {
 
 extension SelfieViewController: SelfieViewDelegate {
 
+    // MARK: - SelfieViewDelegate
+
     // MARK: - MVPViewDelegate
+
+    func setupUI() {
+        log.message("[\(type(of: self))].\(#function)")
+    }
 
     func makeUp() {
         log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
@@ -57,6 +63,4 @@ extension SelfieViewController: SelfieViewDelegate {
     func localize() {
         log.message("[\(type(of: self))].\(#function)")
     }
-
-    // MARK: - SelfieViewDelegate
 }
