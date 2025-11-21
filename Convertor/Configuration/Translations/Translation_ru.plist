@@ -6,12 +6,18 @@
 	<string>Ветка macOS</string>
 	<key>Greetings</key>
 	<string>Рады приветствовать!</string>
+	<key>Have a great time</key>
+	<string>Не скучного времяпрепровождения</string>
 	<key>Exit</key>
 	<string>Завершить работу</string>
 	<key>Settings...</key>
 	<string></string>
 	<key>Preferences...</key>
 	<string></string>
+	<key>Message: Dark Mode forced</key>
+	<string>Режим подсветки изменен</string>
+	<key>Message: Language forced</key>
+	<string>Язык переключен</string>
 	<key>DarkMode: Auto</key>
 	<string>Среда</string>
 	<key>DarkMode: On</key>

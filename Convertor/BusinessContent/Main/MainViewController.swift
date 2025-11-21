@@ -38,8 +38,7 @@ class MainViewController: NSViewController {
 
     // MARK: - Outlets
 
-    @IBOutlet private(set) weak var buttonExit: NSButton!
-    @IBOutlet private(set) weak var labelGreetings: NSTextField!
+    @IBOutlet private(set) weak var labelGreeting: MessageLabel!
 
     @IBOutlet private(set) weak var segmentedControlDarkMode: NSSegmentedControl!
     @IBOutlet private(set) weak var segmentedControlLanguage: NSSegmentedControl!
@@ -52,10 +51,6 @@ class MainViewController: NSViewController {
 
     @IBAction func actionLanguageDidChanged(_ sender: NSSegmentedControl) {
         presenter?.forceLanguage(sender.selectedSegment)
-    }
-
-    @IBAction func buttonExitTapped(_ sender: NSButton) {
-        AppGlobals.quitTheApp()
     }
 }
 
@@ -73,14 +68,18 @@ extension MainViewController: MainViewDelegate {
     // MARK: - MVPViewDelegate
 
     func setupUI() {
+
         log.message("[\(type(of: self))].\(#function)")
+
+        report.messageDelegate = labelGreeting
+        labelGreeting.messageTextColor = .perseusYellow
+
+        labelGreeting.message = "Greetings".localizedValue
     }
 
     func makeUp() {
 
         log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
-
-        labelGreetings.textColor = .perseusYellow
         view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
     }
 
@@ -91,9 +90,6 @@ extension MainViewController: MainViewDelegate {
         // NSLocale.currentLocaleDidChangeNotification
 
         self.view.window?.title = self.windowTitleLocalized
-
-        labelGreetings.cell?.title = "Greetings".localizedValue
-        buttonExit.title = "Exit".localizedValue
 
         segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
         segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)
@@ -115,7 +111,7 @@ extension MainViewController {
 
     private func updateControlDarkMode() {
 
-        log.message("[\(type(of: self))].\(#function) \(DarkModeAgent.DarkModeUserChoice)")
+        // log.message("[\(type(of: self))].\(#function) \(DarkModeAgent.DarkModeUserChoice)")
 
         switch DarkModeAgent.DarkModeUserChoice {
         case .auto:
@@ -129,7 +125,7 @@ extension MainViewController {
 
     private func updateControlLanguage() {
 
-        log.message("[\(type(of: self))].\(#function) \(AppOptions.languageOption)")
+        // log.message("[\(type(of: self))].\(#function) \(AppOptions.languageOption)")
 
         switch AppOptions.languageOption {
         case .system:
@@ -140,5 +136,4 @@ extension MainViewController {
             segmentedControlLanguage.selectedSegment = 0
         }
     }
-
 }

@@ -35,24 +35,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xJE-z7-zVW">
-                                <rect key="frame" x="117" y="114" width="246" height="43"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Greetings Label" id="tAp-no-M5C">
-                                    <font key="font" metaFont="system" size="36"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xUo-zX-8ec">
-                                <rect key="frame" x="401" y="233" width="76" height="32"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="fZr-Zy-IcN">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="buttonExitTapped:" target="XfG-lQ-9wD" id="qRR-y1-vhS"/>
-                                </connections>
-                            </button>
                             <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-4N-ykD">
                                 <rect key="frame" x="94" y="9" width="378" height="24"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="suj-Bf-iJg">
@@ -81,22 +63,26 @@
                                     <action selector="actionDarkModeDidChanged:" target="XfG-lQ-9wD" id="8qh-WO-a0J"/>
                                 </connections>
                             </segmentedControl>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="S5Q-NA-pFh" customClass="MessageLabel" customModule="mov2gif" customModuleProvider="target">
+                                <rect key="frame" x="190" y="229" width="100" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Greetings Label" id="Pb5-Yp-5ov">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="xJE-z7-zVW" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="1vW-eB-zha"/>
+                            <constraint firstItem="S5Q-NA-pFh" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="25" id="A5f-yn-p54"/>
                             <constraint firstItem="kmP-4N-ykD" firstAttribute="top" secondItem="7r5-01-KsR" secondAttribute="bottom" constant="10" id="Gln-I3-Ws9"/>
-                            <constraint firstItem="xUo-zX-8ec" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="eJo-d6-u4F"/>
-                            <constraint firstItem="xJE-z7-zVW" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="mUt-rf-zU0"/>
-                            <constraint firstItem="xUo-zX-8ec" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="oR4-4K-YCT"/>
+                            <constraint firstItem="S5Q-NA-pFh" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bOu-cF-kLQ"/>
                             <constraint firstAttribute="trailing" secondItem="kmP-4N-ykD" secondAttribute="trailing" constant="10" id="q42-ir-RoP"/>
                             <constraint firstAttribute="bottom" secondItem="kmP-4N-ykD" secondAttribute="bottom" constant="10" id="riq-KT-OX0"/>
                             <constraint firstAttribute="trailing" secondItem="7r5-01-KsR" secondAttribute="trailing" constant="10" id="vAl-R4-y6v"/>
-                            <constraint firstAttribute="trailing" secondItem="xUo-zX-8ec" secondAttribute="trailing" constant="10" id="wIq-at-gbX"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="buttonExit" destination="xUo-zX-8ec" id="7xN-bK-9Fk"/>
-                        <outlet property="labelGreetings" destination="xJE-z7-zVW" id="cTV-wq-oz5"/>
+                        <outlet property="labelGreeting" destination="S5Q-NA-pFh" id="HLe-Nx-78I"/>
                         <outlet property="segmentedControlDarkMode" destination="7r5-01-KsR" id="k4m-AD-aQg"/>
                         <outlet property="segmentedControlLanguage" destination="kmP-4N-ykD" id="cL9-ac-gBK"/>
                     </connections>

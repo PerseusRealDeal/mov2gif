@@ -11,9 +11,14 @@
 
 "Product Name" = "Ветка macOS";
 "Greetings" = "Рады приветствовать!";
+"Have a great time" = "Не скучного времяпрепровождения";
+
 "Exit" = "Завершить работу";
 "Settings..." = "";
 "Preferences..." = "";
+
+"Message: Dark Mode forced" = "Режим подсветки изменен";
+"Message: Language forced" = "Язык переключен";
 
 "DarkMode: Auto" = "Среда";
 "DarkMode: On" = "Темная";

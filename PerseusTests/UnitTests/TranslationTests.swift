@@ -24,6 +24,9 @@ class TranslationTests: XCTestCase {
         XCTAssertEqual("Greetings".localizedExpectation,
                        "Greetings".localizedValue)
 
+        XCTAssertEqual("Have a great time".localizedExpectation,
+                       "Have a great time".localizedValue)
+
         XCTAssertEqual("Exit".localizedExpectation,
                        "Exit".localizedValue)
 
@@ -32,6 +35,12 @@ class TranslationTests: XCTestCase {
 
         XCTAssertEqual("Preferences...".localizedExpectation,
                        "Preferences...".localizedValue)
+
+        XCTAssertEqual("Message: Dark Mode forced".localizedExpectation,
+                       "Message: Dark Mode forced".localizedValue)
+
+        XCTAssertEqual("Message: Language forced".localizedExpectation,
+                       "Message: Language forced".localizedValue)
 
         XCTAssertEqual("DarkMode: Auto".localizedExpectation,
                        "DarkMode: Auto".localizedValue)

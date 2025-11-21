@@ -11,9 +11,14 @@
 
 "Product Name" = "Branch macOS";
 "Greetings" = "Hello world!";
+"Have a great time" = "Have a great time";
+
 "Exit" = "Exit";
 "Settings..." = "Settings...";
 "Preferences..." = "Preferences...";
+
+"Message: Dark Mode forced" = "Dark Mode forced";
+"Message: Language forced" = "Language forced";
 
 "DarkMode: Auto" = "System";
 "DarkMode: On" = "Dark";

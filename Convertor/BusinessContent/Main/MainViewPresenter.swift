@@ -63,6 +63,8 @@ class MainViewPresenter: MVPPresenter {
         default:
             break
         }
+
+        log.message("Message: Dark Mode forced".localizedValue, .notice, .custom, .enduser)
     }
 
     func forceLanguage(_ selected: Int) {
@@ -78,6 +80,8 @@ class MainViewPresenter: MVPPresenter {
         }
 
         globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
+
+        log.message("Message: Language forced".localizedValue, .notice, .custom, .enduser)
     }
 
     // MARK: - Realization

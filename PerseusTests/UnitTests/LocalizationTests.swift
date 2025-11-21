@@ -40,8 +40,7 @@ class LocalizationTests: XCTestCase {
 
         // assert
 
-        XCTAssertEqual(sut.labelGreetings.stringValue, "Greetings".localizedValue)
-        XCTAssertEqual(sut.buttonExit.title, "Exit".localizedValue)
+        XCTAssertEqual(sut.labelGreeting.stringValue, "Greetings".localizedValue)
     }
 
     func test_Localization_of_OptionsScreen_controlDarkMode() {

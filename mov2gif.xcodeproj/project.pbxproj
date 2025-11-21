@@ -12,6 +12,7 @@
 		2E4B6DE12ED0C53F00882086 /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE02ED0C53F00882086 /* AppUserDefaults.swift */; };
 		2E4B6DE42ED0C60A00882086 /* LanguageSwitcherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE32ED0C60A00882086 /* LanguageSwitcherModels.swift */; };
 		2E4B6DE62ED0C61800882086 /* LanguageSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */; };
+		2E4B6DE82ED0EE1200882086 /* MessageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE72ED0EE1200882086 /* MessageLabel.swift */; };
 		2E5E3FBF2CA2AC1C00D024AB /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */; };
 		2E67C6962ECC451B006BF7EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E67C6952ECC451B006BF7EE /* MainMenu.xib */; };
 		2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */; };
@@ -70,6 +71,7 @@
 		2E4B6DE02ED0C53F00882086 /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
 		2E4B6DE32ED0C60A00882086 /* LanguageSwitcherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcherModels.swift; sourceTree = "<group>"; };
 		2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcher.swift; sourceTree = "<group>"; };
+		2E4B6DE72ED0EE1200882086 /* MessageLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLabel.swift; sourceTree = "<group>"; };
 		2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swiftlint.yml; path = .github/workflows/swiftlint.yml; sourceTree = "<group>"; };
 		2E67C6952ECC451B006BF7EE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewPresenter.swift; sourceTree = "<group>"; };
@@ -299,6 +301,7 @@
 			children = (
 				2E4B6DE22ED0C5F300882086 /* LanguageSwitcher */,
 				4B5921CD2B66488D00D312B9 /* Gifts */,
+				2E4B6DE72ED0EE1200882086 /* MessageLabel.swift */,
 			);
 			path = FirstPartyCode;
 			sourceTree = "<group>";
@@ -486,6 +489,7 @@
 				4BC7F11529F66F8100851FEA /* AppGlobals.swift in Sources */,
 				4B9DEDFB2B6C851A003EE547 /* AppLinks.swift in Sources */,
 				4BFA5FE02989A69E00AC09F5 /* TheMenu.swift in Sources */,
+				2E4B6DE82ED0EE1200882086 /* MessageLabel.swift in Sources */,
 				2E4B6DE12ED0C53F00882086 /* AppUserDefaults.swift in Sources */,
 				4B1483E72912892C0013B76E /* MainViewController.swift in Sources */,
 				4B9DEDF72B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift in Sources */,
