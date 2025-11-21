@@ -12,5 +12,17 @@
 	<string></string>
 	<key>Preferences...</key>
 	<string></string>
+	<key>DarkMode: Auto</key>
+	<string>Среда</string>
+	<key>DarkMode: On</key>
+	<string>Темная</string>
+	<key>DarkMode: Off</key>
+	<string>Светлая</string>
+	<key>Language: System</key>
+	<string>Среда</string>
+	<key>Language: Russian</key>
+	<string>Русский</string>
+	<key>Language: English</key>
+	<string>Английский</string>
 </dict>
 </plist>

@@ -65,6 +65,21 @@ class MainViewPresenter: MVPPresenter {
         }
     }
 
+    func forceLanguage(_ selected: Int) {
+        switch selected {
+        case 0:
+            AppOptions.languageOption = .en
+        case 1:
+            AppOptions.languageOption = .ru
+        case 2:
+            AppOptions.languageOption = .system
+        default:
+            return
+        }
+
+        globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
+    }
+
     // MARK: - Realization
 
 }

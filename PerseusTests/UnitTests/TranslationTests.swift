@@ -32,5 +32,23 @@ class TranslationTests: XCTestCase {
 
         XCTAssertEqual("Preferences...".localizedExpectation,
                        "Preferences...".localizedValue)
+
+        XCTAssertEqual("DarkMode: Auto".localizedExpectation,
+                       "DarkMode: Auto".localizedValue)
+
+        XCTAssertEqual("DarkMode: On".localizedExpectation,
+                       "DarkMode: On".localizedValue)
+
+        XCTAssertEqual("DarkMode: Off".localizedExpectation,
+                       "DarkMode: Off".localizedValue)
+
+        XCTAssertEqual("Language: System".localizedExpectation,
+                       "Language: System".localizedValue)
+
+        XCTAssertEqual("Language: Russian".localizedExpectation,
+                       "Language: Russian".localizedValue)
+
+        XCTAssertEqual("Language: English".localizedExpectation,
+                       "Language: English".localizedValue)
     }
 }

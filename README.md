@@ -39,7 +39,7 @@
 * [Third-party software](#Third-party-software)
 * [Points taken into account](#Points-taken-into-account)
 * [License](#License)
-    * [Other Required Licenses Details](#Other-Required-Licenses-Details)
+    * [Other required licenses details](#Other-required-licenses-details)
 * [Credits](#Credits)
 * [Author](#Author)
 
@@ -111,7 +111,7 @@ Copyright © 7534 PerseusRealDeal
 
 [LICENSE](/LICENSE) for details.
 
-## Other Required Licenses Details
+## Other required licenses details
 
 © Mikhail A. Zhigulin of Novosibirsk **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © PerseusRealDeal **for** ConsolePerseusLogger, PerseusDarkMode</br>

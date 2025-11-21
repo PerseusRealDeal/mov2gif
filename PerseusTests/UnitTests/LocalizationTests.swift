@@ -43,4 +43,38 @@ class LocalizationTests: XCTestCase {
         XCTAssertEqual(sut.labelGreetings.stringValue, "Greetings".localizedValue)
         XCTAssertEqual(sut.buttonExit.title, "Exit".localizedValue)
     }
+
+    func test_Localization_of_OptionsScreen_controlDarkMode() {
+
+        // arrange
+
+        sut.loadView()
+        presenter.viewDidLoad()
+
+        // assert
+
+        XCTAssertEqual(sut.segmentedControlDarkMode.label(forSegment: 0),
+                       "DarkMode: Off".localizedValue)
+        XCTAssertEqual(sut.segmentedControlDarkMode.label(forSegment: 1),
+                       "DarkMode: On".localizedValue)
+        XCTAssertEqual(sut.segmentedControlDarkMode.label(forSegment: 2),
+                       "DarkMode: Auto".localizedValue)
+    }
+
+    func test_Localization_of_OptionsScreen_controlLanguage() {
+
+        // arrange
+
+        sut.loadView()
+        presenter.viewDidLoad()
+
+        // assert
+
+        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 2),
+                       "Language: System".localizedValue)
+        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 1),
+                       "Language: Russian".localizedValue)
+        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 0),
+                       "Language: English".localizedValue)
+    }
 }

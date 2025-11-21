@@ -42,6 +42,8 @@ log.message("The app's start point...", .info)
 
 // MARK: - Construct the app's top elements
 
+let globals = AppGlobals()
+
 let app = NSApplication.shared
 
 let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type

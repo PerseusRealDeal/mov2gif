@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2E1272222E33551800E74E62 /* CPLStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1272212E33551800E74E62 /* CPLStar.swift */; };
 		2E1272242E33552400E74E62 /* PDMStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1272232E33552400E74E62 /* PDMStar.swift */; };
+		2E4B6DE12ED0C53F00882086 /* AppUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE02ED0C53F00882086 /* AppUserDefaults.swift */; };
+		2E4B6DE42ED0C60A00882086 /* LanguageSwitcherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE32ED0C60A00882086 /* LanguageSwitcherModels.swift */; };
+		2E4B6DE62ED0C61800882086 /* LanguageSwitcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */; };
 		2E5E3FBF2CA2AC1C00D024AB /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */; };
 		2E67C6962ECC451B006BF7EE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E67C6952ECC451B006BF7EE /* MainMenu.xib */; };
 		2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */; };
@@ -31,7 +34,6 @@
 		4B6F986C2927E0F000ADB03A /* Translation_en.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F986B2927E0F000ADB03A /* Translation_en.plist */; };
 		4B6F986E2927E11700ADB03A /* Translation_ru.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F986D2927E11700ADB03A /* Translation_ru.plist */; };
 		4B6F98712927E4FC00ADB03A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F98732927E4FC00ADB03A /* Localizable.strings */; };
-		4B6F98772927E81000ADB03A /* LocalizationExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F98762927E81000ADB03A /* LocalizationExtentions.swift */; };
 		4B6F987A2927EF0E00ADB03A /* LocalizedInfoPlistGift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F98792927EF0E00ADB03A /* LocalizedInfoPlistGift.swift */; };
 		4B6F987C2927F08D00ADB03A /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F987B2927F08D00ADB03A /* LocalizationTests.swift */; };
 		4B6F987E2928259E00ADB03A /* REQUIREMENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F987D2928259E00ADB03A /* REQUIREMENTS.md */; };
@@ -65,6 +67,9 @@
 /* Begin PBXFileReference section */
 		2E1272212E33551800E74E62 /* CPLStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPLStar.swift; sourceTree = "<group>"; };
 		2E1272232E33552400E74E62 /* PDMStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMStar.swift; sourceTree = "<group>"; };
+		2E4B6DE02ED0C53F00882086 /* AppUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaults.swift; sourceTree = "<group>"; };
+		2E4B6DE32ED0C60A00882086 /* LanguageSwitcherModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcherModels.swift; sourceTree = "<group>"; };
+		2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageSwitcher.swift; sourceTree = "<group>"; };
 		2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swiftlint.yml; path = .github/workflows/swiftlint.yml; sourceTree = "<group>"; };
 		2E67C6952ECC451B006BF7EE /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewPresenter.swift; sourceTree = "<group>"; };
@@ -97,7 +102,6 @@
 		4B6F986D2927E11700ADB03A /* Translation_ru.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Translation_ru.plist; sourceTree = "<group>"; };
 		4B6F98722927E4FC00ADB03A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4B6F98742927E4FE00ADB03A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		4B6F98762927E81000ADB03A /* LocalizationExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationExtentions.swift; sourceTree = "<group>"; };
 		4B6F98792927EF0E00ADB03A /* LocalizedInfoPlistGift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedInfoPlistGift.swift; sourceTree = "<group>"; };
 		4B6F987B2927F08D00ADB03A /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		4B6F987D2928259E00ADB03A /* REQUIREMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REQUIREMENTS.md; sourceTree = "<group>"; };
@@ -155,6 +159,15 @@
 			path = TheCrownOfStars;
 			sourceTree = "<group>";
 		};
+		2E4B6DE22ED0C5F300882086 /* LanguageSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				2E4B6DE32ED0C60A00882086 /* LanguageSwitcherModels.swift */,
+				2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */,
+			);
+			path = LanguageSwitcher;
+			sourceTree = "<group>";
+		};
 		2EC2942D2ECD9AC600FC06F1 /* MVPPattern */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +211,7 @@
 				4BBE90662912931A008F734D /* main.swift */,
 				4BC7F11429F66F8100851FEA /* AppGlobals.swift */,
 				4B1483E42912892C0013B76E /* AppDelegate.swift */,
+				2E4B6DE02ED0C53F00882086 /* AppUserDefaults.swift */,
 				4B6F98752927E7C600ADB03A /* FirstPartyCode */,
 				4B14840229128A930013B76E /* Configuration */,
 				4B14840429128E460013B76E /* BusinessContent */,
@@ -265,7 +279,6 @@
 			isa = PBXGroup;
 			children = (
 				4B5921CF2B6648BC00D312B9 /* JsonDataPrettyPrintedGift.swift */,
-				4B6F98762927E81000ADB03A /* LocalizationExtentions.swift */,
 				4B5921D12B6648CA00D312B9 /* JsonDataDictionaryGift.swift */,
 				4B9DEDF62B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift */,
 			);
@@ -284,6 +297,7 @@
 		4B6F98752927E7C600ADB03A /* FirstPartyCode */ = {
 			isa = PBXGroup;
 			children = (
+				2E4B6DE22ED0C5F300882086 /* LanguageSwitcher */,
 				4B5921CD2B66488D00D312B9 /* Gifts */,
 			);
 			path = FirstPartyCode;
@@ -472,16 +486,18 @@
 				4BC7F11529F66F8100851FEA /* AppGlobals.swift in Sources */,
 				4B9DEDFB2B6C851A003EE547 /* AppLinks.swift in Sources */,
 				4BFA5FE02989A69E00AC09F5 /* TheMenu.swift in Sources */,
+				2E4B6DE12ED0C53F00882086 /* AppUserDefaults.swift in Sources */,
 				4B1483E72912892C0013B76E /* MainViewController.swift in Sources */,
 				4B9DEDF72B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift in Sources */,
 				2EAA4CB82DF2B45600E8E81A /* PDMSupportingStar.swift in Sources */,
+				2E4B6DE62ED0C61800882086 /* LanguageSwitcher.swift in Sources */,
 				4B5921D02B6648BC00D312B9 /* JsonDataPrettyPrintedGift.swift in Sources */,
 				4B1483E52912892C0013B76E /* AppDelegate.swift in Sources */,
 				2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */,
 				2E1272222E33551800E74E62 /* CPLStar.swift in Sources */,
+				2E4B6DE42ED0C60A00882086 /* LanguageSwitcherModels.swift in Sources */,
 				2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */,
 				4BBE905E29128FB1008F734D /* MainWindowController.swift in Sources */,
-				4B6F98772927E81000ADB03A /* LocalizationExtentions.swift in Sources */,
 				2E1272242E33552400E74E62 /* PDMStar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

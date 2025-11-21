@@ -40,12 +40,18 @@ class MainViewController: NSViewController {
 
     @IBOutlet private(set) weak var buttonExit: NSButton!
     @IBOutlet private(set) weak var labelGreetings: NSTextField!
-    @IBOutlet private(set) weak var controlDarkMode: NSSegmentedControl!
+
+    @IBOutlet private(set) weak var segmentedControlDarkMode: NSSegmentedControl!
+    @IBOutlet private(set) weak var segmentedControlLanguage: NSSegmentedControl!
 
     // MARK: - Actions
 
-    @IBAction func segmentedControlValueChanged(_ sender: NSSegmentedControl) {
+    @IBAction func actionDarkModeDidChanged(_ sender: NSSegmentedControl) {
         presenter?.forceDarkMode(sender.selectedSegment)
+    }
+
+    @IBAction func actionLanguageDidChanged(_ sender: NSSegmentedControl) {
+        presenter?.forceLanguage(sender.selectedSegment)
     }
 
     @IBAction func buttonExitTapped(_ sender: NSButton) {
@@ -61,6 +67,7 @@ extension MainViewController: MainViewDelegate {
 
     func onViewDidAppear() {
         updateControlDarkMode()
+        updateControlLanguage()
     }
 
     // MARK: - MVPViewDelegate
@@ -82,8 +89,23 @@ extension MainViewController: MainViewDelegate {
         log.message("[\(type(of: self))].\(#function)")
 
         // NSLocale.currentLocaleDidChangeNotification
+
+        self.view.window?.title = self.windowTitleLocalized
+
         labelGreetings.cell?.title = "Greetings".localizedValue
         buttonExit.title = "Exit".localizedValue
+
+        segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
+        segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)
+        segmentedControlDarkMode.setLabel("DarkMode: Auto".localizedValue, forSegment: 2)
+
+        segmentedControlLanguage.setLabel("Language: English".localizedValue, forSegment: 0)
+        segmentedControlLanguage.setLabel("Language: Russian".localizedValue, forSegment: 1)
+        segmentedControlLanguage.setLabel("Language: System".localizedValue, forSegment: 2)
+    }
+
+    private var windowTitleLocalized: String {
+        return "Product Name".localizedValue
     }
 }
 
@@ -97,11 +119,26 @@ extension MainViewController {
 
         switch DarkModeAgent.DarkModeUserChoice {
         case .auto:
-            controlDarkMode.selectedSegment = 2
+            segmentedControlDarkMode.selectedSegment = 2
         case .on:
-            controlDarkMode.selectedSegment = 1
+            segmentedControlDarkMode.selectedSegment = 1
         case .off:
-            controlDarkMode.selectedSegment = 0
+            segmentedControlDarkMode.selectedSegment = 0
         }
     }
+
+    private func updateControlLanguage() {
+
+        log.message("[\(type(of: self))].\(#function) \(AppOptions.languageOption)")
+
+        switch AppOptions.languageOption {
+        case .system:
+            segmentedControlLanguage.selectedSegment = 2
+        case .ru:
+            segmentedControlLanguage.selectedSegment = 1
+        case .en:
+            segmentedControlLanguage.selectedSegment = 0
+        }
+    }
+
 }

@@ -14,3 +14,11 @@
 "Exit" = "Завершить работу";
 "Settings..." = "";
 "Preferences..." = "";
+
+"DarkMode: Auto" = "Среда";
+"DarkMode: On" = "Темная";
+"DarkMode: Off" = "Светлая";
+
+"Language: System" = "Среда";
+"Language: Russian" = "Русский";
+"Language: English" = "Английский";

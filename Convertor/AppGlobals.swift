@@ -39,6 +39,8 @@ struct AppGlobals {
 
     // MARK: - Custom Services
 
+    public let languageSwitcher: LanguageSwitcher
+
     // MARK: - Init
 
     init() {
@@ -46,6 +48,7 @@ struct AppGlobals {
 
         // Init custom services here.
 
+        self.languageSwitcher = LanguageSwitcher.shared
     }
 
     // MARK: - Common system relative functions

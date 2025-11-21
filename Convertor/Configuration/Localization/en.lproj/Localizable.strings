@@ -14,3 +14,11 @@
 "Exit" = "Exit";
 "Settings..." = "Settings...";
 "Preferences..." = "Preferences...";
+
+"DarkMode: Auto" = "System";
+"DarkMode: On" = "Dark";
+"DarkMode: Off" = "Light";
+
+"Language: System" = "System";
+"Language: Russian" = "Russian";
+"Language: English" = "English";

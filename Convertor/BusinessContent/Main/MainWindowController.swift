@@ -42,15 +42,17 @@ class MainWindowController: NSWindowController {
         return SelfieWindowController.storyboardInstance()
     }()
 
-    // MARK: - Actions
-
-    @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
-        selfie.showWindow(sender)
-    }
+    // MARK: - Life Circle
 
     override func windowDidLoad() {
         super.windowDidLoad()
 
         log.message("[\(type(of: self))].\(#function)")
+    }
+
+    // MARK: - Actions
+
+    @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
+        selfie.showWindow(sender)
     }
 }
