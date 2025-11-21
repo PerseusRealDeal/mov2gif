@@ -61,7 +61,7 @@ class MainViewPresenter: MVPPresenter {
         case 2:
             DarkModeAgent.force(.auto)
         default:
-            break
+            return
         }
 
         log.message("Message: Dark Mode forced".localizedValue, .notice, .custom, .enduser)
