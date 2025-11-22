@@ -73,12 +73,9 @@ extension MainViewController: MainViewDelegate {
 
         report.messageDelegate = labelGreeting
         labelGreeting.messageTextColor = .perseusYellow
-
-        labelGreeting.message = "Greetings".localizedValue
     }
 
     func makeUp() {
-
         log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
         view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
     }
@@ -90,6 +87,8 @@ extension MainViewController: MainViewDelegate {
         // NSLocale.currentLocaleDidChangeNotification
 
         self.view.window?.title = self.windowTitleLocalized
+
+        labelGreeting.message = "Greetings".localizedValue
 
         segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
         segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)

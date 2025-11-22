@@ -50,16 +50,12 @@ let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type
 let appDelegate = appPurpose?.init() ?? AppDelegate()
 
 let screen = MainWindowController.storyboardInstance()
-let mainMenu = NSNib(nibNamed: NSNib.Name("MainMenu"), bundle: nil)
 
 // MARK: - Make the app run
 
 app.setActivationPolicy(.regular)
-
-mainMenu?.instantiate(withOwner: app, topLevelObjects: nil)
 screen.window?.makeKeyAndOrderFront(nil)
 
 app.delegate = appDelegate as? NSApplicationDelegate
-
 app.activate(ignoringOtherApps: true)
 app.run()
