@@ -33,8 +33,38 @@ class TranslationTests: XCTestCase {
         XCTAssertEqual("Have a great time".localizedExpectation,
                        "Have a great time".localizedValue)
 
-        XCTAssertEqual("Selfie".localizedExpectation,
-                       "Selfie".localizedValue)
+        XCTAssertEqual("Label: Copyright Notice".localizedExpectation,
+                       "Label: Copyright Notice".localizedValue)
+
+        XCTAssertEqual("Label: Copyright Details".localizedExpectation,
+                       "Label: Copyright Details".localizedValue)
+
+        XCTAssertEqual("Label: Credits".localizedExpectation,
+                       "Label: Credits".localizedValue)
+
+        XCTAssertEqual("Label: Balancing and Control".localizedExpectation,
+                       "Label: Balancing and Control".localizedValue)
+
+        XCTAssertEqual("Label: Writing".localizedExpectation,
+                       "Label: Writing".localizedValue)
+
+        XCTAssertEqual("Label: Documenting".localizedExpectation,
+                       "Label: Documenting".localizedValue)
+
+        XCTAssertEqual("Label: Artworking".localizedExpectation,
+                       "Label: Artworking".localizedValue)
+
+        XCTAssertEqual("Label: EN Expectation".localizedExpectation,
+                       "Label: EN Expectation".localizedValue)
+
+        XCTAssertEqual("Label: RU Expectation".localizedExpectation,
+                       "Label: RU Expectation".localizedValue)
+
+        XCTAssertEqual("Label: Author".localizedExpectation,
+                       "Label: Author".localizedValue)
+
+        XCTAssertEqual("Button: Selfie".localizedExpectation,
+                       "Button: Selfie".localizedValue)
 
         XCTAssertEqual("Message: Dark Mode forced".localizedExpectation,
                        "Message: Dark Mode forced".localizedValue)
@@ -59,5 +89,26 @@ class TranslationTests: XCTestCase {
 
         XCTAssertEqual("Language: English".localizedExpectation,
                        "Language: English".localizedValue)
+
+        XCTAssertEqual("Title: Convertor".localizedExpectation,
+                       "Title: Convertor".localizedValue)
+
+        XCTAssertEqual("Label: The App Version".localizedExpectation,
+                       "Label: The App Version".localizedValue)
+
+        XCTAssertEqual("Button: The App Source Code".localizedExpectation,
+                       "Button: The App Source Code".localizedValue)
+
+        XCTAssertEqual("Button: The Technological Tree".localizedExpectation,
+                       "Button: The Technological Tree".localizedValue)
+
+        XCTAssertEqual("Button: License".localizedExpectation,
+                       "Button: License".localizedValue)
+
+        XCTAssertEqual("Button: Terms & Conditions".localizedExpectation,
+                       "Button: Terms & Conditions".localizedValue)
+
+        XCTAssertEqual("Button: Close".localizedExpectation,
+                       "Button: Close".localizedValue)
     }
 }

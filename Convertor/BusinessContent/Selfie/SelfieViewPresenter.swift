@@ -2,7 +2,7 @@
 //  SelfieViewPresenter.swift
 //  mov2gif
 //
-//  Created by Mikhail Zhigulin in 7532 (18.11.2025).
+//  Created by Mikhail Zhigulin in 7534 (18.11.2025).
 //
 //  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
 //  Copyright © 7534 PerseusRealDeal
@@ -17,9 +17,7 @@ import Foundation
 
 // MARK: - SelfieWindow Communication
 
-protocol SelfieViewDelegate: MVPViewDelegate {
-
-}
+protocol SelfieViewDelegate: MVPViewDelegate {}
 
 // MARK: - SelfieWindow Business Logic
 

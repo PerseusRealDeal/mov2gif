@@ -2,7 +2,7 @@
 //  SelfieViewController.swift, SelfieWindowController.storyboard
 //  mov2gif
 //
-//  Created by Mikhail Zhigulin in 7532 (7.11.2025).
+//  Created by Mikhail Zhigulin in 7534 (7.11.2025).
 //
 //  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
 //  Copyright © 7534 PerseusRealDeal

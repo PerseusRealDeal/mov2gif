@@ -100,4 +100,18 @@ struct AppGlobals {
 
         app.terminate(appDelegate)
     }
+
+    static func openDefaultBrowser(string link: String) {
+
+        log.message("[\(type(of: self))].\(#function)")
+
+        guard let url = NSURL(string: link) as URL? else {
+            log.message("[\(type(of: self))].\(#function)", .error)
+            return
+        }
+
+        _ = NSWorkspace.shared.open(url) ?
+        log.message("[\(type(of: self))].\(#function) - default browser opened") :
+        log.message("[\(type(of: self))].\(#function) - default browser not opened")
+    }
 }

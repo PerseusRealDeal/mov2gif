@@ -97,7 +97,7 @@ extension MainViewController: MainViewDelegate {
         self.view.window?.title = self.windowTitleLocalized
 
         labelGreeting.message = "Greetings".localizedValue
-        buttonSelfie.title = "Selfie".localizedValue
+        buttonSelfie.title = "Button: Selfie".localizedValue
 
         segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
         segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)

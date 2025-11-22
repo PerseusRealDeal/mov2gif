@@ -49,7 +49,7 @@ class MainWindowLocalizationTests: XCTestCase {
         XCTAssertEqual(sut.view.window?.title, sut.windowTitleLocalized)
 
         XCTAssertEqual(sut.labelGreeting.stringValue, "Greetings".localizedValue)
-        XCTAssertEqual(sut.buttonSelfie.title, "Selfie".localizedValue)
+        XCTAssertEqual(sut.buttonSelfie.title, "Button: Selfie".localizedValue)
 
     }
 

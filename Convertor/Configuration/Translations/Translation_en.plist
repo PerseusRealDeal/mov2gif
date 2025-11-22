@@ -8,7 +8,45 @@
 	<string>Hello world!</string>
 	<key>Have a great time</key>
 	<string>Have a great time</string>
-	<key>Selfie</key>
+    <key>/* Selfie Screen */</key>
+    <string></string>
+    <key>Title: Convertor</key>
+    <string>Convertor</string>
+    <key>Label: The App Version</key>
+    <string>Version</string>
+    <key>Button: The App Source Code</key>
+    <string>The App Source Code</string>
+    <key>Button: The Technological Tree</key>
+    <string>The Technological Tree</string>
+    <key>Button: License</key>
+    <string>License</string>
+    <key>Button: Terms &amp; Conditions</key>
+    <string>Terms &amp; Conditions</string>
+    <key>Button: Close</key>
+    <string>Close</string>
+	<key>Label: Copyright Notice</key>
+	<string>Copyright © 7534 Mikhail Zhigulin of Novosibirsk</string>
+	<key>Label: Copyright Details</key>
+	<string>The year starts from the creation of the world in the Star temple according to a Slavic calendar. September, the 1st of Slavic year.</string>
+    <key>Label: Credits</key>
+    <string>Credits</string>
+    <key>Label: Balancing and Control</key>
+    <string>Balance and Control by</string>
+    <key>Label: Writing</key>
+    <string>Written by</string>
+    <key>Label: Documenting</key>
+    <string>Documented by</string>
+    <key>Label: Artworking</key>
+    <string>Artwork by</string>
+    <key>Label: EN Expectation</key>
+    <string>English by</string>
+    <key>Label: RU Expectation</key>
+    <string>Russian by</string>
+    <key>Label: Author</key>
+    <string>Mikhail Zhigulin</string>
+    <key>/* Main Screen */</key>
+    <string></string>
+	<key>Button: Selfie</key>
 	<string>Selfie</string>
 	<key>Message: Dark Mode forced</key>
 	<string>Dark Mode forced</string>
