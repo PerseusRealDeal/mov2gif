@@ -36,7 +36,7 @@ extension MainWindowController {
     }
 }
 
-class MainWindowController: NSWindowController {
+class MainWindowController: NSWindowController, NSWindowDelegate {
 
     private lazy var selfie = { () -> SelfieWindowController in
         return SelfieWindowController.storyboardInstance()
@@ -48,11 +48,24 @@ class MainWindowController: NSWindowController {
         super.windowDidLoad()
 
         log.message("[\(type(of: self))].\(#function)")
+
+        if let window = self.window {
+            window.delegate = self
+        } else {
+            log.message("[\(type(of: self))].\(#function) window instance is nil", .error)
+        }
     }
 
     // MARK: - Actions
 
     @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
         selfie.showWindow(sender)
+    }
+
+    // MARK: - NSWindowDelegate
+
+    func windowWillClose(_ notification: Notification) {
+        log.message("[\(type(of: self))].\(#function)")
+        AppGlobals.quitTheApp()
     }
 }

@@ -85,5 +85,4 @@ class MainViewPresenter: MVPPresenter {
     }
 
     // MARK: - Realization
-
 }

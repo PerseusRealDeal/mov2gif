@@ -41,12 +41,20 @@ class SelfieWindowController: NSWindowController, NSWindowDelegate {
     override func windowDidLoad() {
         super.windowDidLoad()
 
-        // window?.appearance = NSAppearance(named: NSAppearance.Name.vibrantDark)
-        self.window?.title = AppGlobals.SystemServices.title
+        log.message("[\(type(of: self))].\(#function)")
+
+        if let window = self.window {
+            window.delegate = self
+        } else {
+            log.message("[\(type(of: self))].\(#function) window instance is nil", .error)
+        }
     }
 
     func windowShouldClose(_ sender: NSWindow) -> Bool {
+
+        log.message("[\(type(of: self))].\(#function)")
         self.window?.orderOut(sender)
+
         return false
     }
 }

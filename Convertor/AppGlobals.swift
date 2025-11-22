@@ -15,6 +15,13 @@
 
 import Cocoa
 
+var isHighSierra: Bool { // true HighSierra, false otherwise
+    if #available(macOS 10.14, *) {
+        return false
+    } // For HighSierra.
+    return true
+}
+
 struct AppGlobals {
 
     // MARK: - Constants

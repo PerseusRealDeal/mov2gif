@@ -73,12 +73,19 @@ extension MainViewController: MainViewDelegate {
         log.message("[\(type(of: self))].\(#function)")
 
         report.messageDelegate = labelGreeting
-        labelGreeting.messageTextColor = .perseusYellow
+        // labelGreeting.messageTextColor = .perseusYellow
     }
 
     func makeUp() {
+
         log.message("[\(type(of: self))].\(#function), DarkMode: \(DarkMode.style)")
-        view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
+
+        // view.layer?.backgroundColor = NSColor.perseusBlue.cgColor
+
+        if isHighSierra {
+            view.window?.appearance = DarkModeAgent.DarkModeUserChoice == .on ?
+            DARK_APPEARANCE_DEFAULT_IN_USE : LIGHT_APPEARANCE_DEFAULT_IN_USE
+        }
     }
 
     func localize() {
