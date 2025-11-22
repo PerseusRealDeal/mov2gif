@@ -59,5 +59,26 @@ class TranslationTests: XCTestCase {
 
         XCTAssertEqual("Language: English".localizedExpectation,
                        "Language: English".localizedValue)
+
+        XCTAssertEqual("Convertor".localizedExpectation,
+                       "Convertor".localizedValue)
+
+        XCTAssertEqual("Label: The App Version".localizedExpectation,
+                       "Label: The App Version".localizedValue)
+
+        XCTAssertEqual("Button: The App Source Code".localizedExpectation,
+                       "Button: The App Source Code".localizedValue)
+
+        XCTAssertEqual("Button: The Technological Tree".localizedExpectation,
+                       "Button: The Technological Tree".localizedValue)
+
+        XCTAssertEqual("Button: License".localizedExpectation,
+                       "Button: License".localizedValue)
+
+        XCTAssertEqual("Button: Terms & Conditions".localizedExpectation,
+                       "Button: Terms & Conditions".localizedValue)
+
+        XCTAssertEqual("Button: Close".localizedExpectation,
+                       "Button: Close".localizedValue)
     }
 }

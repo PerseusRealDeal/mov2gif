@@ -17,9 +17,7 @@ import Foundation
 
 // MARK: - SelfieWindow Communication
 
-protocol SelfieViewDelegate: MVPViewDelegate {
-
-}
+protocol SelfieViewDelegate: MVPViewDelegate {}
 
 // MARK: - SelfieWindow Business Logic
 

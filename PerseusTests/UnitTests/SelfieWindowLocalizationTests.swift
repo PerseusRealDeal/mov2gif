@@ -46,6 +46,22 @@ class SelfieWindowLocalizationTests: XCTestCase {
 
         // assert
 
-        XCTAssertEqual(sut.view.window?.title, "Selfie".localizedValue)
+        XCTAssertEqual(sut.view.window?.title, "Convertor".localizedValue)
+
+        XCTAssertEqual(sut.buttonTheAppSourceCode.title,
+                       "Button: The App Source Code".localizedValue)
+        XCTAssertEqual(sut.buttonTheTechnologicalTree.title,
+                       "Button: The Technological Tree".localizedValue)
+        XCTAssertEqual(sut.buttonLicense.title,
+                       "Button: License".localizedValue)
+        XCTAssertEqual(sut.buttonTerms.title,
+                       "Button: Terms & Conditions".localizedValue)
+        XCTAssertEqual(sut.buttonClose.title,
+                       "Button: Close".localizedValue)
+
+        XCTAssertEqual(sut.labelTheAppName.stringValue,
+                       "Product Name".localizedValue)
+        XCTAssertEqual(sut.labelTheAppVersion.stringValue,
+                       sut.theAppVersionLocalized)
     }
 }

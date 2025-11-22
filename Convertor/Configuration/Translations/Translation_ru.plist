@@ -26,5 +26,21 @@
 	<string>Русский</string>
 	<key>Language: English</key>
 	<string>Английский</string>
+    <key>/* Selfie Screen */</key>
+    <string></string>
+    <key>Convertor</key>
+    <string>Конвертор</string>
+    <key>Label: The App Version</key>
+    <string>Выпуск</string>
+    <key>Button: The App Source Code</key>
+    <string>Исходники изделия</string>
+    <key>Button: The Technological Tree</key>
+    <string>Золотое дерево</string>
+    <key>Button: License</key>
+    <string>Текст лицензии</string>
+    <key>Button: Terms &amp; Conditions</key>
+    <string>Соглашение</string>
+    <key>Button: Close</key>
+    <string>Исчезнуть</string>
 </dict>
 </plist>

@@ -23,7 +23,38 @@ class SelfieViewController: NSViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet weak var labelTheAppName: NSTextField!
+    @IBOutlet weak var labelTheAppVersion: NSTextField!
+
+    @IBOutlet weak var buttonTheAppSourceCode: NSButton!
+    @IBOutlet weak var buttonTheTechnologicalTree: NSButton!
+
+    @IBOutlet weak var buttonLicense: NSButton!
+    @IBOutlet weak var buttonTerms: NSButton!
+
+    @IBOutlet weak var buttonClose: NSButton!
+
     // MARK: - Actions
+
+    @IBAction func buttonCloseTapped(_ sender: Any) {
+        self.view.window?.close()
+    }
+
+    @IBAction func buttonTermsTapped(_ sender: Any) {
+        AppGlobals.openDefaultBrowser(string: linkTermsAndConditions)
+    }
+
+    @IBAction func buttonLicenseTapped(_ sender: Any) {
+        AppGlobals.openDefaultBrowser(string: linkLicense)
+    }
+
+    @IBAction func buttonTheTechnologicalTreeTapped(_ sender: Any) {
+        AppGlobals.openDefaultBrowser(string: linkTheTechnologicalTree)
+    }
+
+    @IBAction func buttonTheAppSourceCodeTapped(_ sender: Any) {
+        AppGlobals.openDefaultBrowser(string: linkTheAppSourceCode)
+    }
 
     // MARK: - Life Circle
 
@@ -31,8 +62,8 @@ class SelfieViewController: NSViewController {
         super.viewDidLoad()
 
         self.view.wantsLayer = true
-        self.preferredContentSize = NSSize(width: self.view.frame.size.width,
-                                           height: self.view.frame.size.height)
+        // self.preferredContentSize = NSSize(width: self.view.frame.size.width,
+        //                                    height: self.view.frame.size.height)
     }
 
     override func viewDidAppear() {
@@ -40,7 +71,6 @@ class SelfieViewController: NSViewController {
 
         self.parent?.view.window?.title = self.title!
     }
-
 }
 
 // MARK: - MVP View
@@ -68,7 +98,27 @@ extension SelfieViewController: SelfieViewDelegate {
     }
 
     func localize() {
+
         log.message("[\(type(of: self))].\(#function)")
-        self.view.window?.title = "Selfie".localizedValue
+
+        self.view.window?.title = "Convertor".localizedValue
+
+        buttonTheAppSourceCode.title = "Button: The App Source Code".localizedValue
+        buttonTheTechnologicalTree.title = "Button: The Technological Tree".localizedValue
+        buttonLicense.title = "Button: License".localizedValue
+        buttonTerms.title = "Button: Terms & Conditions".localizedValue
+        buttonClose.title = "Button: Close".localizedValue
+
+        labelTheAppName.stringValue = "Product Name".localizedValue
+        labelTheAppVersion.stringValue = theAppVersionLocalized
+    }
+
+    var theAppVersionLocalized: String {
+        guard
+            let ver = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        else {
+            return ""
+        }
+        return "Label: The App Version".localizedValue + ": \(ver)"
     }
 }

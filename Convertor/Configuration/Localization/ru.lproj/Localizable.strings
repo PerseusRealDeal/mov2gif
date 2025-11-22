@@ -25,3 +25,16 @@
 "Language: System" = "Среда";
 "Language: Russian" = "Русский";
 "Language: English" = "Английский";
+
+/* Selfie Screen – SelfieWindowController, SelfieViewController */
+
+"Convertor" = "Конвертор";
+"Label: The App Version" = "Выпуск";
+
+"Button: The App Source Code" = "Исходники изделия";
+"Button: The Technological Tree" = "Золотое дерево";
+
+"Button: License" = "Текст лицензии";
+"Button: Terms & Conditions" = "Соглашение";
+
+"Button: Close" = "Исчезнуть";
