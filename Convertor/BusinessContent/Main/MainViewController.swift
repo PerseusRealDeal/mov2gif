@@ -39,6 +39,7 @@ class MainViewController: NSViewController {
     // MARK: - Outlets
 
     @IBOutlet private(set) weak var labelGreeting: MessageLabel!
+    @IBOutlet private(set) weak var buttonSelfie: NSButton!
 
     @IBOutlet private(set) weak var segmentedControlDarkMode: NSSegmentedControl!
     @IBOutlet private(set) weak var segmentedControlLanguage: NSSegmentedControl!
@@ -89,6 +90,7 @@ extension MainViewController: MainViewDelegate {
         self.view.window?.title = self.windowTitleLocalized
 
         labelGreeting.message = "Greetings".localizedValue
+        buttonSelfie.title = "Selfie".localizedValue
 
         segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
         segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)
@@ -99,8 +101,15 @@ extension MainViewController: MainViewDelegate {
         segmentedControlLanguage.setLabel("Language: System".localizedValue, forSegment: 2)
     }
 
-    private var windowTitleLocalized: String {
-        return "Product Name".localizedValue
+    var windowTitleLocalized: String {
+
+        guard
+            let ver = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString")
+        else {
+            return "Product Name".localizedValue
+        }
+
+        return "Product Name".localizedValue + " v\(ver)"
     }
 }
 

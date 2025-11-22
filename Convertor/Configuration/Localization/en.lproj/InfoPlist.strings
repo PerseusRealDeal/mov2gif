@@ -14,5 +14,5 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"CFBundleDisplayName" = "Branch macOS";
-"CFBundleName" = "Branch macOS";
+"CFBundleDisplayName" = "mov2gif";
+"CFBundleName" = "mov2gif";

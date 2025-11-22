@@ -62,5 +62,6 @@ extension SelfieViewController: SelfieViewDelegate {
 
     func localize() {
         log.message("[\(type(of: self))].\(#function)")
+        self.view.window?.title = "Selfie".localizedValue
     }
 }

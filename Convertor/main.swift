@@ -15,12 +15,12 @@
 
 import Cocoa
 
-// MARK: - Log Report
+// MARK: - The log report
 
 let report = PerseusLogger.Report()
 log.customActionOnMessage = report.report(_:_:_:_:_:_:)
 
-// MARK: - Logger
+// MARK: - The logger
 
 // log.turned = .off
 // dmlog.turned = .off

@@ -9,13 +9,11 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"Product Name" = "Branch macOS";
+"Product Name" = "mov2gif";
 "Greetings" = "Hello world!";
 "Have a great time" = "Have a great time";
 
-"Exit" = "Exit";
-"Settings..." = "Settings...";
-"Preferences..." = "Preferences...";
+"Selfie" = "Selfie";
 
 "Message: Dark Mode forced" = "Dark Mode forced";
 "Message: Language forced" = "Language forced";

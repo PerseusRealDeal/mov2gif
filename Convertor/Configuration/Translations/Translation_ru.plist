@@ -3,17 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Product Name</key>
-	<string>Ветка macOS</string>
+	<string>mov2gif</string>
 	<key>Greetings</key>
 	<string>Рады приветствовать!</string>
 	<key>Have a great time</key>
 	<string>Не скучного времяпрепровождения</string>
-	<key>Exit</key>
-	<string>Завершить работу</string>
-	<key>Settings...</key>
-	<string></string>
-	<key>Preferences...</key>
-	<string></string>
+	<key>Selfie</key>
+	<string>Себяшка</string>
 	<key>Message: Dark Mode forced</key>
 	<string>Режим подсветки изменен</string>
 	<key>Message: Language forced</key>

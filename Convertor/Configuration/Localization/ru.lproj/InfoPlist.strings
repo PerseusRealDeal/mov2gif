@@ -14,5 +14,5 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"CFBundleDisplayName" = "Ветка macOS";
-"CFBundleName" = "Ветка macOS";
+"CFBundleDisplayName" = "mov2gif";
+"CFBundleName" = "mov2gif";

@@ -71,17 +71,34 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-uS-9PK">
+                                <rect key="frame" x="365" y="220" width="112" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0nr-ZQ-irC"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Button Selfie" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CB3-kh-m4w">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showSelfieWindow:" target="rPt-NT-nkU" id="OoX-kr-ph7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="2vl-uS-9PK" firstAttribute="centerY" secondItem="S5Q-NA-pFh" secondAttribute="centerY" id="5gl-na-7Fe"/>
                             <constraint firstItem="S5Q-NA-pFh" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="25" id="A5f-yn-p54"/>
+                            <constraint firstAttribute="trailing" secondItem="2vl-uS-9PK" secondAttribute="trailing" constant="10" id="Cxm-ty-pch"/>
                             <constraint firstItem="kmP-4N-ykD" firstAttribute="top" secondItem="7r5-01-KsR" secondAttribute="bottom" constant="10" id="Gln-I3-Ws9"/>
                             <constraint firstItem="S5Q-NA-pFh" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bOu-cF-kLQ"/>
+                            <constraint firstItem="2vl-uS-9PK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="S5Q-NA-pFh" secondAttribute="trailing" constant="8" symbolic="YES" id="k9k-EZ-sNo"/>
                             <constraint firstAttribute="trailing" secondItem="kmP-4N-ykD" secondAttribute="trailing" constant="10" id="q42-ir-RoP"/>
                             <constraint firstAttribute="bottom" secondItem="kmP-4N-ykD" secondAttribute="bottom" constant="10" id="riq-KT-OX0"/>
                             <constraint firstAttribute="trailing" secondItem="7r5-01-KsR" secondAttribute="trailing" constant="10" id="vAl-R4-y6v"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonSelfie" destination="2vl-uS-9PK" id="y83-4A-QGG"/>
                         <outlet property="labelGreeting" destination="S5Q-NA-pFh" id="HLe-Nx-78I"/>
                         <outlet property="segmentedControlDarkMode" destination="7r5-01-KsR" id="k4m-AD-aQg"/>
                         <outlet property="segmentedControlLanguage" destination="kmP-4N-ykD" id="cL9-ac-gBK"/>

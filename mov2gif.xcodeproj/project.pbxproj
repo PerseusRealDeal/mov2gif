@@ -16,6 +16,7 @@
 		2E5E3FBF2CA2AC1C00D024AB /* swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */; };
 		2E67C6982ECCBF06006BF7EE /* SelfieViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */; };
 		2E67C69A2ECCC04A006BF7EE /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */; };
+		2EA5E4382ED19E9600757B3E /* SelfieWindowLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */; };
 		2EAA4CB82DF2B45600E8E81A /* PDMSupportingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */; };
 		2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2942E2ECD9AEF00FC06F1 /* MVPPresenter.swift */; };
 		2EC294312ECD9B9700FC06F1 /* MVPViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC294302ECD9B9700FC06F1 /* MVPViewDelegate.swift */; };
@@ -35,7 +36,7 @@
 		4B6F986E2927E11700ADB03A /* Translation_ru.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F986D2927E11700ADB03A /* Translation_ru.plist */; };
 		4B6F98712927E4FC00ADB03A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F98732927E4FC00ADB03A /* Localizable.strings */; };
 		4B6F987A2927EF0E00ADB03A /* LocalizedInfoPlistGift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F98792927EF0E00ADB03A /* LocalizedInfoPlistGift.swift */; };
-		4B6F987C2927F08D00ADB03A /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F987B2927F08D00ADB03A /* LocalizationTests.swift */; };
+		4B6F987C2927F08D00ADB03A /* MainWindowLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6F987B2927F08D00ADB03A /* MainWindowLocalizationTests.swift */; };
 		4B6F987E2928259E00ADB03A /* REQUIREMENTS.md in Resources */ = {isa = PBXBuildFile; fileRef = 4B6F987D2928259E00ADB03A /* REQUIREMENTS.md */; };
 		4B9DEDF72B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DEDF62B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift */; };
 		4B9DEDF92B6C7F04003EE547 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9DEDF82B6C7F04003EE547 /* CustomColors.swift */; };
@@ -73,6 +74,7 @@
 		2E5E3FBE2CA2AC1C00D024AB /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = swiftlint.yml; path = .github/workflows/swiftlint.yml; sourceTree = "<group>"; };
 		2E67C6972ECCBF06006BF7EE /* SelfieViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieViewPresenter.swift; sourceTree = "<group>"; };
 		2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewPresenter.swift; sourceTree = "<group>"; };
+		2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieWindowLocalizationTests.swift; sourceTree = "<group>"; };
 		2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMSupportingStar.swift; sourceTree = "<group>"; };
 		2EAA4CB92DF2E14200E8E81A /* APPROBATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APPROBATION.md; sourceTree = "<group>"; };
 		2EB587422C9FB16A00D7B55B /* TestPlanStarted.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlanStarted.xctestplan; sourceTree = "<group>"; };
@@ -102,7 +104,7 @@
 		4B6F98722927E4FC00ADB03A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4B6F98742927E4FE00ADB03A /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4B6F98792927EF0E00ADB03A /* LocalizedInfoPlistGift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedInfoPlistGift.swift; sourceTree = "<group>"; };
-		4B6F987B2927F08D00ADB03A /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
+		4B6F987B2927F08D00ADB03A /* MainWindowLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowLocalizationTests.swift; sourceTree = "<group>"; };
 		4B6F987D2928259E00ADB03A /* REQUIREMENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = REQUIREMENTS.md; sourceTree = "<group>"; };
 		4B9DEDF62B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSystemLanguageGift.swift; sourceTree = "<group>"; };
 		4B9DEDF82B6C7F04003EE547 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
@@ -240,7 +242,8 @@
 			children = (
 				4B1483F72912892F0013B76E /* BundleTests.swift */,
 				4B5921C32B64959C00D312B9 /* TranslationTests.swift */,
-				4B6F987B2927F08D00ADB03A /* LocalizationTests.swift */,
+				4B6F987B2927F08D00ADB03A /* MainWindowLocalizationTests.swift */,
+				2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -496,8 +499,9 @@
 			files = (
 				4B1483F82912892F0013B76E /* BundleTests.swift in Sources */,
 				4B5921C42B64959C00D312B9 /* TranslationTests.swift in Sources */,
+				2EA5E4382ED19E9600757B3E /* SelfieWindowLocalizationTests.swift in Sources */,
 				4B6F987A2927EF0E00ADB03A /* LocalizedInfoPlistGift.swift in Sources */,
-				4B6F987C2927F08D00ADB03A /* LocalizationTests.swift in Sources */,
+				4B6F987C2927F08D00ADB03A /* MainWindowLocalizationTests.swift in Sources */,
 				4B5921CC2B65A65200D312B9 /* LocalizedExpectationGift.swift in Sources */,
 				4BBE90652912911D008F734D /* TestingAppDelegate.swift in Sources */,
 			);

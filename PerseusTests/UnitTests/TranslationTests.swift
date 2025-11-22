@@ -2,9 +2,15 @@
 //  TranslationTests.swift
 //  PerseusTests
 //
-//  Created by Mikhail A. Zhigulin of Novosibirsk.
+//  Created by Mikhail Zhigulin in 7534.
 //
-//  Unlicensed Free Software.
+//  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
+//  Copyright © 7534 PerseusRealDeal
+//
+//  The year starts from the creation of the world in the Star temple
+//  according to a Slavic calendar. September, the 1st of Slavic year.
+//
+//  See LICENSE for details. All rights reserved.
 //
 
 import XCTest
@@ -17,7 +23,7 @@ class TranslationTests: XCTestCase {
 
     // MARK: - Main Screen
 
-    func test_Expectations() {
+    func test_expectations() {
 
         // assert
 
@@ -27,14 +33,8 @@ class TranslationTests: XCTestCase {
         XCTAssertEqual("Have a great time".localizedExpectation,
                        "Have a great time".localizedValue)
 
-        XCTAssertEqual("Exit".localizedExpectation,
-                       "Exit".localizedValue)
-
-        XCTAssertEqual("Settings...".localizedExpectation,
-                       "Settings...".localizedValue)
-
-        XCTAssertEqual("Preferences...".localizedExpectation,
-                       "Preferences...".localizedValue)
+        XCTAssertEqual("Selfie".localizedExpectation,
+                       "Selfie".localizedValue)
 
         XCTAssertEqual("Message: Dark Mode forced".localizedExpectation,
                        "Message: Dark Mode forced".localizedValue)

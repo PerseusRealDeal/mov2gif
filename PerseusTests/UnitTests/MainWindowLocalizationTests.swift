@@ -1,16 +1,22 @@
 //
-//  LocalizationTests.swift
+//  MainWindowLocalizationTests.swift
 //  PerseusTests
 //
-//  Created by Mikhail A. Zhigulin of Novosibirsk.
+//  Created by Mikhail Zhigulin in 7534 (22.11.2025).
 //
-//  Unlicensed Free Software.
+//  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
+//  Copyright © 7534 PerseusRealDeal
+//
+//  The year starts from the creation of the world in the Star temple
+//  according to a Slavic calendar. September, the 1st of Slavic year.
+//
+//  See LICENSE for details. All rights reserved.
 //
 
 import XCTest
 @testable import mov2gif
 
-class LocalizationTests: XCTestCase {
+class MainWindowLocalizationTests: XCTestCase {
 
     private var windowController: MainWindowController!
     private var sut: MainViewController!
@@ -31,7 +37,7 @@ class LocalizationTests: XCTestCase {
     // func test_zero() { XCTFail("Tests not yet implemented in \(type(of: self)).") }
     // func test_the_first_success() { XCTAssertTrue(true, "It's done!") }
 
-    func test_Localization_of_MainScreen() {
+    func test_localization_of_MainScreen() {
 
         // arrange
 
@@ -40,10 +46,14 @@ class LocalizationTests: XCTestCase {
 
         // assert
 
+        XCTAssertEqual(sut.view.window?.title, sut.windowTitleLocalized)
+
         XCTAssertEqual(sut.labelGreeting.stringValue, "Greetings".localizedValue)
+        XCTAssertEqual(sut.buttonSelfie.title, "Selfie".localizedValue)
+
     }
 
-    func test_Localization_of_OptionsScreen_controlDarkMode() {
+    func test_localization_of_options_controlDarkMode() {
 
         // arrange
 
@@ -60,7 +70,7 @@ class LocalizationTests: XCTestCase {
                        "DarkMode: Auto".localizedValue)
     }
 
-    func test_Localization_of_OptionsScreen_controlLanguage() {
+    func test_localization_of_options_controlLanguage() {
 
         // arrange
 
@@ -69,11 +79,11 @@ class LocalizationTests: XCTestCase {
 
         // assert
 
-        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 2),
-                       "Language: System".localizedValue)
-        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 1),
-                       "Language: Russian".localizedValue)
         XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 0),
                        "Language: English".localizedValue)
+        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 1),
+                       "Language: Russian".localizedValue)
+        XCTAssertEqual(sut.segmentedControlLanguage.label(forSegment: 2),
+                       "Language: System".localizedValue)
     }
 }

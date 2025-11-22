@@ -9,13 +9,11 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"Product Name" = "Ветка macOS";
+"Product Name" = "mov2gif";
 "Greetings" = "Рады приветствовать!";
 "Have a great time" = "Не скучного времяпрепровождения";
 
-"Exit" = "Завершить работу";
-"Settings..." = "";
-"Preferences..." = "";
+"Selfie" = "Себяшка";
 
 "Message: Dark Mode forced" = "Режим подсветки изменен";
 "Message: Language forced" = "Язык переключен";
