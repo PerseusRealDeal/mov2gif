@@ -38,7 +38,60 @@
                     <view key="view" id="l6X-2e-Dmj">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-je-v1e">
+                                <rect key="frame" x="10" y="40" width="460" height="162"/>
+                                <clipView key="contentView" drawsBackground="NO" id="ta0-vY-Xbf">
+                                    <rect key="frame" x="0.0" y="0.0" width="460" height="162"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="PPo-gV-iDw">
+                                            <rect key="frame" x="0.0" y="0.0" width="460" height="162"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="460" height="162"/>
+                                            <size key="maxSize" width="460" height="10000000"/>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="sTl-uy-htK">
+                                    <rect key="frame" x="-100" y="-100" width="240" height="16"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Vf7-8p-en1">
+                                    <rect key="frame" x="444" y="0.0" width="16" height="162"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wC1-l0-DZY">
+                                <rect key="frame" x="3" y="3" width="124" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="F0n-p2-ey7"/>
+                                </constraints>
+                                <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="C92-hj-cWI">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonCloseTapped:" target="GFj-10-8bg" id="RHv-TZ-T6v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wC1-l0-DZY" secondAttribute="bottom" constant="10" id="IdW-X7-GyD"/>
+                            <constraint firstItem="wC1-l0-DZY" firstAttribute="top" secondItem="4uD-je-v1e" secondAttribute="bottom" constant="10" id="K6H-xm-mXq"/>
+                            <constraint firstAttribute="trailing" secondItem="4uD-je-v1e" secondAttribute="trailing" constant="10" id="OQN-QG-n3Z"/>
+                            <constraint firstItem="4uD-je-v1e" firstAttribute="top" secondItem="l6X-2e-Dmj" secondAttribute="top" constant="68" id="cki-jg-oQz"/>
+                            <constraint firstItem="wC1-l0-DZY" firstAttribute="leading" secondItem="l6X-2e-Dmj" secondAttribute="leading" constant="10" id="nJC-pl-ept"/>
+                            <constraint firstItem="4uD-je-v1e" firstAttribute="leading" secondItem="l6X-2e-Dmj" secondAttribute="leading" constant="10" id="yVa-wQ-hIG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonClose" destination="wC1-l0-DZY" id="EIF-5e-ZkA"/>
+                        <outlet property="texViewLogMessages" destination="PPo-gV-iDw" id="GJb-qg-ZaR"/>
+                    </connections>
                 </viewController>
                 <customObject id="E7p-N3-aLo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

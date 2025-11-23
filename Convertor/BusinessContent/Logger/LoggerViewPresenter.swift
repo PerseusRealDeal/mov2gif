@@ -2,17 +2,24 @@
 //  LoggerViewPresenter.swift
 //  mov2gif
 //
-//  Created by Perseus on 23.11.2025.
-//  Copyright © 2025 Mikhail Zhigulin. All rights reserved.
+//  Created by Mikhail Zhigulin in 7534 (23.11.2025).
+//
+//  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
+//  Copyright © 7534 PerseusRealDeal
+//
+//  The year starts from the creation of the world in the Star temple
+//  according to a Slavic calendar. September, the 1st of Slavic year.
+//
+//  See LICENSE for details. All rights reserved.
 //
 
 import Foundation
 
-// MARK: - SelfieWindow Communication
+// MARK: - LoggerWindow Communication
 
 protocol LoggerViewDelegate: MVPViewDelegate {}
 
-// MARK: - SelfieWindow Business Logic
+// MARK: - LoggerWindow Business Logic
 
 class LoggerViewPresenter: MVPPresenter {
 

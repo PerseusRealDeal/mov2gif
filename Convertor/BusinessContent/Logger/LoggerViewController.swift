@@ -23,7 +23,14 @@ class LoggerViewController: NSViewController {
 
     // MARK: - Outlets
 
+    @IBOutlet private(set) weak var buttonClose: NSButton!
+    @IBOutlet private(set) weak var texViewLogMessages: NSTextView!
+
     // MARK: - Actions
+
+    @IBAction func buttonCloseTapped(_ sender: Any) {
+        self.view.window?.close()
+    }
 }
 
 // MARK: - MVP View
@@ -34,6 +41,10 @@ extension LoggerViewController: LoggerViewDelegate {
 
     func setupUI() {
 
+        log.message("[\(type(of: self))].\(#function)")
+
+        texViewLogMessages.backgroundColor = .clear
+        texViewLogMessages.textColor = .darkGray
     }
 
     func makeUp() {
@@ -49,7 +60,10 @@ extension LoggerViewController: LoggerViewDelegate {
     }
 
     func localize() {
+
         log.message("[\(type(of: self))].\(#function)")
+
         self.view.window?.title = "Button: Logger".localizedValue
+        buttonClose.title = "Button: Close".localizedValue
     }
 }
