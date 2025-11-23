@@ -48,6 +48,8 @@
     <string></string>
 	<key>Button: Selfie</key>
 	<string>Себяшка</string>
+    <key>Button: Logger</key>
+    <string>Журнал</string>
 	<key>Message: Dark Mode forced</key>
 	<string>Режим подсветки изменен</string>
 	<key>Message: Language forced</key>

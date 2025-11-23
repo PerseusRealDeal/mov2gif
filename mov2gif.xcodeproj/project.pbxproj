@@ -18,6 +18,10 @@
 		2E67C69A2ECCC04A006BF7EE /* MainViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E67C6992ECCC04A006BF7EE /* MainViewPresenter.swift */; };
 		2EA5E4382ED19E9600757B3E /* SelfieWindowLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA5E4372ED19E9600757B3E /* SelfieWindowLocalizationTests.swift */; };
 		2EAA4CB82DF2B45600E8E81A /* PDMSupportingStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */; };
+		2EB8C76A2ED36FB500FA4C03 /* LoggerWindowController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EB8C7692ED36FB500FA4C03 /* LoggerWindowController.storyboard */; };
+		2EB8C76C2ED3708500FA4C03 /* LoggerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8C76B2ED3708500FA4C03 /* LoggerWindowController.swift */; };
+		2EB8C76E2ED3716100FA4C03 /* LoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8C76D2ED3716100FA4C03 /* LoggerViewController.swift */; };
+		2EB8C7702ED3721D00FA4C03 /* LoggerViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB8C76F2ED3721D00FA4C03 /* LoggerViewPresenter.swift */; };
 		2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC2942E2ECD9AEF00FC06F1 /* MVPPresenter.swift */; };
 		2EC294312ECD9B9700FC06F1 /* MVPViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC294302ECD9B9700FC06F1 /* MVPViewDelegate.swift */; };
 		2EDC61052E03D8EE00515AA5 /* CPLConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 2EDC61042E03D8EE00515AA5 /* CPLConfig.json */; };
@@ -78,6 +82,10 @@
 		2EAA4CB72DF2B45600E8E81A /* PDMSupportingStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDMSupportingStar.swift; sourceTree = "<group>"; };
 		2EAA4CB92DF2E14200E8E81A /* APPROBATION.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = APPROBATION.md; sourceTree = "<group>"; };
 		2EB587422C9FB16A00D7B55B /* TestPlanStarted.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = TestPlanStarted.xctestplan; sourceTree = "<group>"; };
+		2EB8C7692ED36FB500FA4C03 /* LoggerWindowController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoggerWindowController.storyboard; sourceTree = "<group>"; };
+		2EB8C76B2ED3708500FA4C03 /* LoggerWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerWindowController.swift; sourceTree = "<group>"; };
+		2EB8C76D2ED3716100FA4C03 /* LoggerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerViewController.swift; sourceTree = "<group>"; };
+		2EB8C76F2ED3721D00FA4C03 /* LoggerViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerViewPresenter.swift; sourceTree = "<group>"; };
 		2EC2942E2ECD9AEF00FC06F1 /* MVPPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPPresenter.swift; sourceTree = "<group>"; };
 		2EC294302ECD9B9700FC06F1 /* MVPViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPViewDelegate.swift; sourceTree = "<group>"; };
 		2EDC61042E03D8EE00515AA5 /* CPLConfig.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CPLConfig.json; sourceTree = "<group>"; };
@@ -157,6 +165,17 @@
 				2E4B6DE52ED0C61800882086 /* LanguageSwitcher.swift */,
 			);
 			path = LanguageSwitcher;
+			sourceTree = "<group>";
+		};
+		2EB8C7642ED3644000FA4C03 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				2EB8C7692ED36FB500FA4C03 /* LoggerWindowController.storyboard */,
+				2EB8C76B2ED3708500FA4C03 /* LoggerWindowController.swift */,
+				2EB8C76D2ED3716100FA4C03 /* LoggerViewController.swift */,
+				2EB8C76F2ED3721D00FA4C03 /* LoggerViewPresenter.swift */,
+			);
+			path = Logger;
 			sourceTree = "<group>";
 		};
 		2EC2942D2ECD9AC600FC06F1 /* MVPPattern */ = {
@@ -253,6 +272,7 @@
 			children = (
 				4BBE9063291290C5008F734D /* Main */,
 				4BFA5FD8298974FA00AC09F5 /* Selfie */,
+				2EB8C7642ED3644000FA4C03 /* Logger */,
 			);
 			path = BusinessContent;
 			sourceTree = "<group>";
@@ -426,6 +446,7 @@
 				4BFA5FDA2989A12800AC09F5 /* SelfieWindowController.storyboard in Resources */,
 				2EDC61052E03D8EE00515AA5 /* CPLConfig.json in Resources */,
 				4BBE906B291293F0008F734D /* LICENSE in Resources */,
+				2EB8C76A2ED36FB500FA4C03 /* LoggerWindowController.storyboard in Resources */,
 				4B6F986E2927E11700ADB03A /* Translation_ru.plist in Resources */,
 				4B6F98662927DF1400ADB03A /* InfoPlist.strings in Resources */,
 				4BBE907129137B5E008F734D /* main.yml in Resources */,
@@ -474,14 +495,17 @@
 				2EC294312ECD9B9700FC06F1 /* MVPViewDelegate.swift in Sources */,
 				4BFA5FDC2989A16400AC09F5 /* SelfieWindowController.swift in Sources */,
 				4B9DEDF92B6C7F04003EE547 /* CustomColors.swift in Sources */,
+				2EB8C76E2ED3716100FA4C03 /* LoggerViewController.swift in Sources */,
 				4BC7F11529F66F8100851FEA /* AppGlobals.swift in Sources */,
 				4B9DEDFB2B6C851A003EE547 /* AppLinks.swift in Sources */,
 				2E4B6DE82ED0EE1200882086 /* MessageLabel.swift in Sources */,
 				2E4B6DE12ED0C53F00882086 /* AppUserDefaults.swift in Sources */,
+				2EB8C76C2ED3708500FA4C03 /* LoggerWindowController.swift in Sources */,
 				4B1483E72912892C0013B76E /* MainViewController.swift in Sources */,
 				4B9DEDF72B6C7A9A003EE547 /* CurrentSystemLanguageGift.swift in Sources */,
 				2EAA4CB82DF2B45600E8E81A /* PDMSupportingStar.swift in Sources */,
 				2E4B6DE62ED0C61800882086 /* LanguageSwitcher.swift in Sources */,
+				2EB8C7702ED3721D00FA4C03 /* LoggerViewPresenter.swift in Sources */,
 				4B5921D02B6648BC00D312B9 /* JsonDataPrettyPrintedGift.swift in Sources */,
 				4B1483E52912892C0013B76E /* AppDelegate.swift in Sources */,
 				2EC2942F2ECD9AEF00FC06F1 /* MVPPresenter.swift in Sources */,

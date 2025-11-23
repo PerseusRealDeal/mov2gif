@@ -39,7 +39,9 @@ class MainViewController: NSViewController {
     // MARK: - Outlets
 
     @IBOutlet private(set) weak var labelGreeting: MessageLabel!
+
     @IBOutlet private(set) weak var buttonSelfie: NSButton!
+    @IBOutlet private(set) weak var buttonLogger: NSButton!
 
     @IBOutlet private(set) weak var segmentedControlDarkMode: NSSegmentedControl!
     @IBOutlet private(set) weak var segmentedControlLanguage: NSSegmentedControl!
@@ -97,7 +99,9 @@ extension MainViewController: MainViewDelegate {
         self.view.window?.title = self.windowTitleLocalized
 
         labelGreeting.message = "Greetings".localizedValue
+
         buttonSelfie.title = "Button: Selfie".localizedValue
+        buttonLogger.title = "Button: Logger".localizedValue
 
         segmentedControlDarkMode.setLabel("DarkMode: Off".localizedValue, forSegment: 0)
         segmentedControlDarkMode.setLabel("DarkMode: On".localizedValue, forSegment: 1)

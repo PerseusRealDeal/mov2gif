@@ -66,6 +66,9 @@ class TranslationTests: XCTestCase {
         XCTAssertEqual("Button: Selfie".localizedExpectation,
                        "Button: Selfie".localizedValue)
 
+        XCTAssertEqual("Button: Logger".localizedExpectation,
+                       "Button: Logger".localizedValue)
+
         XCTAssertEqual("Message: Dark Mode forced".localizedExpectation,
                        "Message: Dark Mode forced".localizedValue)
 

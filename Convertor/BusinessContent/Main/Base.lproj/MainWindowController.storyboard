@@ -72,11 +72,11 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2vl-uS-9PK">
-                                <rect key="frame" x="365" y="220" width="112" height="32"/>
+                                <rect key="frame" x="355" y="220" width="122" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0nr-ZQ-irC"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Button Selfie" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CB3-kh-m4w">
+                                <buttonCell key="cell" type="push" title="Button Selfie" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CB3-kh-m4w">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -84,12 +84,25 @@
                                     <action selector="showSelfieWindow:" target="rPt-NT-nkU" id="OoX-kr-ph7"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-VF-Omp">
+                                <rect key="frame" x="355" y="190" width="122" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button Logger" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pVW-9y-iET">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="showLoggerWindow:" target="rPt-NT-nkU" id="wF0-E6-t40"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstItem="2vl-uS-9PK" firstAttribute="centerY" secondItem="S5Q-NA-pFh" secondAttribute="centerY" id="5gl-na-7Fe"/>
                             <constraint firstItem="S5Q-NA-pFh" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="25" id="A5f-yn-p54"/>
                             <constraint firstAttribute="trailing" secondItem="2vl-uS-9PK" secondAttribute="trailing" constant="10" id="Cxm-ty-pch"/>
+                            <constraint firstItem="eTV-VF-Omp" firstAttribute="trailing" secondItem="2vl-uS-9PK" secondAttribute="trailing" id="FGS-bf-ijO"/>
                             <constraint firstItem="kmP-4N-ykD" firstAttribute="top" secondItem="7r5-01-KsR" secondAttribute="bottom" constant="10" id="Gln-I3-Ws9"/>
+                            <constraint firstItem="eTV-VF-Omp" firstAttribute="top" secondItem="2vl-uS-9PK" secondAttribute="bottom" constant="10" id="Htj-vv-M3q"/>
+                            <constraint firstItem="eTV-VF-Omp" firstAttribute="leading" secondItem="2vl-uS-9PK" secondAttribute="leading" id="QBZ-Aa-Yxe"/>
                             <constraint firstItem="S5Q-NA-pFh" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="bOu-cF-kLQ"/>
                             <constraint firstItem="2vl-uS-9PK" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="S5Q-NA-pFh" secondAttribute="trailing" constant="8" symbolic="YES" id="k9k-EZ-sNo"/>
                             <constraint firstAttribute="trailing" secondItem="kmP-4N-ykD" secondAttribute="trailing" constant="10" id="q42-ir-RoP"/>
@@ -98,6 +111,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="buttonLogger" destination="eTV-VF-Omp" id="BGZ-ay-SrS"/>
                         <outlet property="buttonSelfie" destination="2vl-uS-9PK" id="y83-4A-QGG"/>
                         <outlet property="labelGreeting" destination="S5Q-NA-pFh" id="HLe-Nx-78I"/>
                         <outlet property="segmentedControlDarkMode" destination="7r5-01-KsR" id="k4m-AD-aQg"/>

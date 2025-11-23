@@ -48,6 +48,8 @@
     <string></string>
 	<key>Button: Selfie</key>
 	<string>Selfie</string>
+    <key>Button: Logger</key>
+    <string>Logger</string>
 	<key>Message: Dark Mode forced</key>
 	<string>Dark Mode forced</string>
 	<key>Message: Language forced</key>

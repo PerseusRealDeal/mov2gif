@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17150" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="a6s-aw-J1K">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17150"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="PEd-7d-5j0">
+        <!--Window Controller-->
+        <scene sceneID="zbU-fN-0Zy">
             <objects>
-                <viewController id="bU7-R8-ocO" sceneMemberID="viewController">
-                    <view key="view" id="tOy-S4-hL0">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <windowController id="a6s-aw-J1K" customClass="LoggerWindowController" customModule="mov2gif" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="s6i-E2-iLP">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1055"/>
+                        <view key="contentView" id="8sX-Ok-iXL">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </view>
+                        <connections>
+                            <outlet property="delegate" destination="a6s-aw-J1K" id="A8D-Ge-2qJ"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="GFj-10-8bg" kind="relationship" relationship="window.shadowedContentViewController" id="frY-eQ-obS"/>
+                    </connections>
+                </windowController>
+                <customObject id="JAV-gt-lGy" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-87" y="-288"/>
+        </scene>
+        <!--Logger View Controller-->
+        <scene sceneID="noa-av-lAi">
+            <objects>
+                <viewController id="GFj-10-8bg" customClass="LoggerViewController" customModule="mov2gif" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="l6X-2e-Dmj">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="9uD-mB-xHs" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="E7p-N3-aLo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-87" y="139"/>
         </scene>
     </scenes>
 </document>
