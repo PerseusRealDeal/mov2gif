@@ -21,15 +21,43 @@ class LoggerViewController: NSViewController {
 
     var presenter: LoggerViewPresenter?
 
+    // MARK: - Life Circle
+
+    override func viewDidAppear() {
+        super.viewDidAppear()
+
+        presenter?.viewDidAppear()
+    }
+
     // MARK: - Outlets
 
     @IBOutlet private(set) weak var buttonClose: NSButton!
-    @IBOutlet private(set) weak var texViewLogMessages: NSTextView!
+    @IBOutlet private(set) weak var texViewMessages: NSTextView!
+    @IBOutlet private(set) weak var buttonTurned: NSButton!
+    @IBOutlet private(set) weak var segmentedControlOutput: NSSegmentedControl!
+    @IBOutlet private(set) weak var comboBoxFormat: NSComboBox!
+    @IBOutlet private(set) weak var comboBoxLevel: NSComboBox!
 
     // MARK: - Actions
 
     @IBAction func buttonCloseTapped(_ sender: Any) {
         self.view.window?.close()
+    }
+
+    @IBAction func buttonTurnedTapped(_ sender: NSButton) {
+        presenter?.forceTurned(sender.state == .on ? true : false)
+    }
+
+    @IBAction func actionOutputDidChanged(_ sender: NSSegmentedControl) {
+        presenter?.forceOutput(sender.selectedSegment)
+    }
+
+    @IBAction func actionFormatDidChanged(_ sender: NSComboBox) {
+        presenter?.forceFormat(sender.stringValue)
+    }
+
+    @IBAction func actionLevelDidChanged(_ sender: NSComboBox) {
+        presenter?.forceLevel(sender.indexOfSelectedItem)
     }
 }
 
@@ -37,14 +65,28 @@ class LoggerViewController: NSViewController {
 
 extension LoggerViewController: LoggerViewDelegate {
 
+    // MARK: - MainViewDelegate
+
+    func onViewDidAppear() {
+        refresh()
+    }
+
+    func refreshMessages() {
+        texViewMessages.string = report.text
+    }
+
+    func clear() {
+        texViewMessages.string = ""
+    }
+
     // MARK: - MVPViewDelegate
 
     func setupUI() {
 
         log.message("[\(type(of: self))].\(#function)")
 
-        texViewLogMessages.backgroundColor = .clear
-        texViewLogMessages.textColor = .darkGray
+        texViewMessages.backgroundColor = .clear
+        texViewMessages.textColor = .darkGray
     }
 
     func makeUp() {
@@ -65,5 +107,38 @@ extension LoggerViewController: LoggerViewDelegate {
 
         self.view.window?.title = "Button: Logger".localizedValue
         buttonClose.title = "Button: Close".localizedValue
+    }
+}
+
+// MARK: - Refresh
+
+extension LoggerViewController {
+
+    private func refresh() {
+
+        buttonTurned.state = log.turned == .on ? .on : .off
+
+        comboBoxFormat.removeAllItems()
+        comboBoxLevel.removeAllItems()
+
+        for item in PerseusLogger.MessageFormat.allCases {
+            comboBoxFormat.addItem(withObjectValue: "\(item)")
+        }
+
+        for item in PerseusLogger.Level.allCases {
+            comboBoxLevel.addItem(withObjectValue: "\(item)")
+        }
+
+        comboBoxFormat.selectItem(withObjectValue: "\(log.format)")
+        comboBoxLevel.selectItem(withObjectValue: "\(log.level)")
+
+        switch log.output {
+        case .standard:
+            segmentedControlOutput.selectedSegment = 0
+        case .consoleapp:
+            segmentedControlOutput.selectedSegment = 1
+        case .custom:
+            segmentedControlOutput.selectedSegment = 2
+        }
     }
 }

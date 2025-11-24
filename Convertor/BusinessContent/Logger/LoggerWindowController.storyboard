@@ -40,17 +40,17 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uD-je-v1e">
-                                <rect key="frame" x="10" y="40" width="460" height="162"/>
+                                <rect key="frame" x="10" y="40" width="460" height="191"/>
                                 <clipView key="contentView" drawsBackground="NO" id="ta0-vY-Xbf">
-                                    <rect key="frame" x="0.0" y="0.0" width="460" height="162"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="460" height="191"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView editable="NO" importsGraphics="NO" richText="NO" verticallyResizable="YES" spellingCorrection="YES" smartInsertDelete="YES" id="PPo-gV-iDw">
-                                            <rect key="frame" x="0.0" y="0.0" width="460" height="162"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="460" height="191"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="460" height="162"/>
+                                            <size key="minSize" width="460" height="191"/>
                                             <size key="maxSize" width="460" height="10000000"/>
                                             <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
@@ -61,7 +61,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="Vf7-8p-en1">
-                                    <rect key="frame" x="444" y="0.0" width="16" height="162"/>
+                                    <rect key="frame" x="444" y="0.0" width="16" height="191"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -78,19 +78,114 @@
                                     <action selector="buttonCloseTapped:" target="GFj-10-8bg" id="RHv-TZ-T6v"/>
                                 </connections>
                             </button>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E91-G5-Edf">
+                                <rect key="frame" x="220" y="8" width="252" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="A8M-Vg-7MA">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="standard" width="80"/>
+                                        <segment label="consoleapp" width="80" selected="YES" tag="1"/>
+                                        <segment label="custom" width="80"/>
+                                    </segments>
+                                </segmentedCell>
+                                <connections>
+                                    <action selector="actionOutputDidChanged:" target="GFj-10-8bg" id="MLq-uQ-hfb"/>
+                                </connections>
+                            </segmentedControl>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1vb-ky-Svo">
+                                <rect key="frame" x="148" y="11" width="69" height="18"/>
+                                <buttonCell key="cell" type="check" title="Turned" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="zya-PK-OL5">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="buttonTurnedTapped:" target="GFj-10-8bg" id="zFy-XA-zFp"/>
+                                </connections>
+                            </button>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Mvl-Ks-h3G">
+                                <rect key="frame" x="385" y="237" width="88" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="9ps-ie-2ja"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="gsy-mg-hqE">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="actionLevelDidChanged:" target="GFj-10-8bg" id="Dgo-uy-Bai"/>
+                                </connections>
+                            </comboBox>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sp5-n0-LSD">
+                                <rect key="frame" x="253" y="237" width="88" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="mu9-YE-Gog"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="HaJ-Jx-qIc">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                                <connections>
+                                    <action selector="actionFormatDidChanged:" target="GFj-10-8bg" id="WeK-eQ-MUy"/>
+                                </connections>
+                            </comboBox>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hgd-13-dsY">
+                                <rect key="frame" x="346" y="243" width="36" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Level" id="pXD-im-9H0">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZK7-SY-ZL8">
+                                <rect key="frame" x="203" y="243" width="47" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Format" id="0d1-Qg-NeP">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="E91-G5-Edf" firstAttribute="centerY" secondItem="wC1-l0-DZY" secondAttribute="centerY" id="086-uo-bCc"/>
+                            <constraint firstItem="1vb-ky-Svo" firstAttribute="centerY" secondItem="wC1-l0-DZY" secondAttribute="centerY" id="5U2-uQ-U3h"/>
+                            <constraint firstItem="hgd-13-dsY" firstAttribute="centerY" secondItem="Mvl-Ks-h3G" secondAttribute="centerY" id="9hT-ah-zpj"/>
+                            <constraint firstItem="1vb-ky-Svo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wC1-l0-DZY" secondAttribute="trailing" constant="10" id="B64-hT-6f5"/>
                             <constraint firstAttribute="bottom" secondItem="wC1-l0-DZY" secondAttribute="bottom" constant="10" id="IdW-X7-GyD"/>
                             <constraint firstItem="wC1-l0-DZY" firstAttribute="top" secondItem="4uD-je-v1e" secondAttribute="bottom" constant="10" id="K6H-xm-mXq"/>
                             <constraint firstAttribute="trailing" secondItem="4uD-je-v1e" secondAttribute="trailing" constant="10" id="OQN-QG-n3Z"/>
-                            <constraint firstItem="4uD-je-v1e" firstAttribute="top" secondItem="l6X-2e-Dmj" secondAttribute="top" constant="68" id="cki-jg-oQz"/>
+                            <constraint firstItem="Mvl-Ks-h3G" firstAttribute="leading" secondItem="hgd-13-dsY" secondAttribute="trailing" constant="5" id="VXF-VL-ogI"/>
+                            <constraint firstItem="E91-G5-Edf" firstAttribute="leading" secondItem="1vb-ky-Svo" secondAttribute="trailing" constant="5" id="WoO-5n-WOR"/>
+                            <constraint firstItem="Sp5-n0-LSD" firstAttribute="leading" secondItem="ZK7-SY-ZL8" secondAttribute="trailing" constant="5" id="Woh-Ej-lhx"/>
+                            <constraint firstAttribute="trailing" secondItem="E91-G5-Edf" secondAttribute="trailing" constant="10" id="dUw-KR-RqR"/>
+                            <constraint firstItem="ZK7-SY-ZL8" firstAttribute="centerY" secondItem="Mvl-Ks-h3G" secondAttribute="centerY" id="grJ-uG-U2i"/>
+                            <constraint firstItem="hgd-13-dsY" firstAttribute="leading" secondItem="Sp5-n0-LSD" secondAttribute="trailing" constant="10" id="ilv-mV-08I"/>
+                            <constraint firstItem="Mvl-Ks-h3G" firstAttribute="top" secondItem="l6X-2e-Dmj" secondAttribute="top" constant="10" id="ir1-5B-iuh"/>
+                            <constraint firstAttribute="trailing" secondItem="Mvl-Ks-h3G" secondAttribute="trailing" constant="10" id="jDA-iv-LRZ"/>
+                            <constraint firstItem="Sp5-n0-LSD" firstAttribute="centerY" secondItem="Mvl-Ks-h3G" secondAttribute="centerY" id="mn0-6B-uXF"/>
+                            <constraint firstItem="4uD-je-v1e" firstAttribute="top" secondItem="Mvl-Ks-h3G" secondAttribute="bottom" constant="10" id="nBD-I8-Xao"/>
                             <constraint firstItem="wC1-l0-DZY" firstAttribute="leading" secondItem="l6X-2e-Dmj" secondAttribute="leading" constant="10" id="nJC-pl-ept"/>
                             <constraint firstItem="4uD-je-v1e" firstAttribute="leading" secondItem="l6X-2e-Dmj" secondAttribute="leading" constant="10" id="yVa-wQ-hIG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonClose" destination="wC1-l0-DZY" id="EIF-5e-ZkA"/>
-                        <outlet property="texViewLogMessages" destination="PPo-gV-iDw" id="GJb-qg-ZaR"/>
+                        <outlet property="buttonTurned" destination="1vb-ky-Svo" id="e3Z-ke-z1b"/>
+                        <outlet property="comboBoxFormat" destination="Sp5-n0-LSD" id="Zzm-p5-f36"/>
+                        <outlet property="comboBoxLevel" destination="Mvl-Ks-h3G" id="MZW-50-zfk"/>
+                        <outlet property="segmentedControlOutput" destination="E91-G5-Edf" id="ngq-js-sN3"/>
+                        <outlet property="texViewMessages" destination="PPo-gV-iDw" id="ECV-LZ-KIg"/>
                     </connections>
                 </viewController>
                 <customObject id="E7p-N3-aLo" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

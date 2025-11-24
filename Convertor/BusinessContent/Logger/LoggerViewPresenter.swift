@@ -17,11 +17,17 @@ import Foundation
 
 // MARK: - LoggerWindow Communication
 
-protocol LoggerViewDelegate: MVPViewDelegate {}
+protocol LoggerViewDelegate: MVPViewDelegate {
+    func onViewDidAppear()
+    func refreshMessages()
+    func clear()
+}
 
 // MARK: - LoggerWindow Business Logic
 
 class LoggerViewPresenter: MVPPresenter {
+
+    private var reportObservation: NSKeyValueObservation?
 
     // MARK: - Initialization
 
@@ -39,7 +45,69 @@ class LoggerViewPresenter: MVPPresenter {
 
         view?.makeUp()
         view?.localize()
+
+        reportObservation = report.observe(\.lastMessage, options: .new) { _, _ in
+            (self.view as? LoggerViewDelegate)?.refreshMessages()
+        }
+    }
+
+    func viewDidAppear() {
+
+        log.message("[\(type(of: self))].\(#function)")
+
+        (view as? LoggerViewDelegate)?.onViewDidAppear()
     }
 
     // MARK: - Business Contract
+
+    func forceTurned(_ turned: Bool) {
+
+        log.message("[\(type(of: self))].\(#function)")
+        log.turned = turned == true ? .on : .off
+
+        if log.turned == .off {
+            report.clear()
+            (view as? LoggerViewDelegate)?.clear()
+        }
+    }
+
+    func forceOutput(_ selected: Int) {
+
+        log.message("[\(type(of: self))].\(#function)")
+        switch selected {
+        case 0:
+            log.output = .standard
+        case 1:
+            log.output = .consoleapp
+        case 2:
+            log.output = .custom
+        default:
+            return
+        }
+    }
+
+    func forceFormat(_ stringFormat: String) {
+
+        log.message("[\(type(of: self))].\(#function)")
+        guard let item = PerseusLogger.MessageFormat(rawValue: stringFormat)
+        else {
+            log.message("[\(type(of: self))].\(#function)", .error)
+            return
+        }
+
+        log.format = item
+        log.message("[\(type(of: self))].\(#function) \(log.format)")
+    }
+
+    func forceLevel(_ number: Int) {
+
+        log.message("[\(type(of: self))].\(#function)")
+        guard let item = PerseusLogger.Level(rawValue: abs(number - 5))
+        else {
+            log.message("[\(type(of: self))].\(#function)", .error)
+            return
+        }
+
+        log.level = item
+    }
 }
