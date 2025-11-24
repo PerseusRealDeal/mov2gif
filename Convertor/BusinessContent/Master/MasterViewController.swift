@@ -1,5 +1,5 @@
 //
-//  MainViewController.swift
+//  MasterViewController.swift
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7532 (7.11.2025).
@@ -15,11 +15,11 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class MasterViewController: NSViewController {
 
     // MARK: - Presenter
 
-    var presenter: MainViewPresenter?
+    var presenter: MasterViewPresenter?
 
     // MARK: - Life Circle
 
@@ -59,7 +59,7 @@ class MainViewController: NSViewController {
 
 // MARK: - MVP View
 
-extension MainViewController: MainViewDelegate {
+extension MasterViewController: MasterViewDelegate {
 
     // MARK: - MainViewDelegate
 
@@ -126,7 +126,7 @@ extension MainViewController: MainViewDelegate {
 
 // MARK: - Updates
 
-extension MainViewController {
+extension MasterViewController {
 
     private func updateControlDarkMode() {
 

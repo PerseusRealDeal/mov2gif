@@ -1,5 +1,5 @@
 //
-//  MainWindowController.swift, MainWindowController.storyboard
+//  MasterWindowController.swift, MasterWindowController.storyboard
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7532 (7.11.2025).
@@ -15,15 +15,15 @@
 
 import Cocoa
 
-extension MainWindowController {
+extension MasterWindowController {
 
-    class func storyboardInstance() -> MainWindowController {
+    class func storyboardInstance() -> MasterWindowController {
 
         let storyboard = NSStoryboard(name: String(describing: self), bundle: nil)
-        let screen = storyboard.instantiateInitialController() as? MainWindowController
+        let screen = storyboard.instantiateInitialController() as? MasterWindowController
 
-        if let vc = screen?.contentViewController as? MainViewController {
-            vc.presenter = MainViewPresenter(view: vc)
+        if let vc = screen?.contentViewController as? MasterViewController {
+            vc.presenter = MasterViewPresenter(view: vc)
             vc.presenter?.viewDidLoad()
         }
 
@@ -32,11 +32,11 @@ extension MainWindowController {
         // screen?.modalTransitionStyle = UIModalTransitionStyle.partialCurl
         // screen?.view.backgroundColor = UIColor.yellow
 
-        return screen ?? MainWindowController()
+        return screen ?? MasterWindowController()
     }
 }
 
-class MainWindowController: NSWindowController, NSWindowDelegate {
+class MasterWindowController: NSWindowController, NSWindowDelegate {
 
     private lazy var logger = { () -> LoggerWindowController in
         return LoggerWindowController.storyboardInstance()

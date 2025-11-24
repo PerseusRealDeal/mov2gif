@@ -1,5 +1,5 @@
 //
-//  MainWindowLocalizationTests.swift
+//  MasterWindowLocalizationTests.swift
 //  PerseusTests
 //
 //  Created by Mikhail Zhigulin in 7534 (22.11.2025).
@@ -16,21 +16,21 @@
 import XCTest
 @testable import mov2gif
 
-class MainWindowLocalizationTests: XCTestCase {
+class MasterWindowLocalizationTests: XCTestCase {
 
-    private var windowController: MainWindowController!
-    private var sut: MainViewController!
+    private var windowController: MasterWindowController!
+    private var sut: MasterViewController!
 
-    private var presenter: MainViewPresenter!
+    private var presenter: MasterViewPresenter!
 
     override func setUp() {
         super.setUp()
 
-        windowController = MainWindowController.storyboardInstance()
-        sut = windowController.contentViewController as? MainViewController
+        windowController = MasterWindowController.storyboardInstance()
+        sut = windowController.contentViewController as? MasterViewController
 
         if let vc = sut {
-            presenter = MainViewPresenter(view: vc)
+            presenter = MasterViewPresenter(view: vc)
         }
     }
 

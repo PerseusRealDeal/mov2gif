@@ -1,5 +1,5 @@
 //
-//  MainViewPresenter.swift
+//  MasterViewPresenter.swift
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7532 (18.11.2025).
@@ -17,17 +17,17 @@ import Foundation
 
 // MARK: - MainWindow Communication
 
-protocol MainViewDelegate: MVPViewDelegate {
+protocol MasterViewDelegate: MVPViewDelegate {
     func onViewDidAppear()
 }
 
 // MARK: - MainWindow Business Logic
 
-class MainViewPresenter: MVPPresenter {
+class MasterViewPresenter: MVPPresenter {
 
     // MARK: - Initialization
 
-    init(view: MainViewDelegate) {
+    init(view: MasterViewDelegate) {
         super.init(view: view)
     }
 
@@ -47,7 +47,7 @@ class MainViewPresenter: MVPPresenter {
 
         log.message("[\(type(of: self))].\(#function)")
 
-        (view as? MainViewDelegate)?.onViewDidAppear()
+        (view as? MasterViewDelegate)?.onViewDidAppear()
     }
 
     // MARK: - Business Contract
