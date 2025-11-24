@@ -65,13 +65,13 @@ class LoggerViewController: NSViewController {
 
 extension LoggerViewController: LoggerViewDelegate {
 
-    // MARK: - MainViewDelegate
+    // MARK: - LoggerViewDelegate
 
     func onViewDidAppear() {
-        refresh()
+        reload()
     }
 
-    func refreshMessages() {
+    func reloadMessages() {
         texViewMessages.string = report.text
     }
 
@@ -110,11 +110,11 @@ extension LoggerViewController: LoggerViewDelegate {
     }
 }
 
-// MARK: - Refresh
+// MARK: - Reload
 
 extension LoggerViewController {
 
-    private func refresh() {
+    private func reload() {
 
         buttonTurned.state = log.turned == .on ? .on : .off
 

@@ -23,16 +23,9 @@ class MasterViewController: NSViewController {
 
     // MARK: - Life Circle
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        view.wantsLayer = true
-    }
-
     override func viewDidAppear() {
         super.viewDidAppear()
 
-        self.parent?.view.window?.title = self.title!
         presenter?.viewDidAppear()
     }
 
@@ -64,8 +57,8 @@ extension MasterViewController: MasterViewDelegate {
     // MARK: - MainViewDelegate
 
     func onViewDidAppear() {
-        updateControlDarkMode()
-        updateControlLanguage()
+        reloadControlDarkMode()
+        reloadControlLanguage()
     }
 
     // MARK: - MVPViewDelegate
@@ -74,6 +67,7 @@ extension MasterViewController: MasterViewDelegate {
 
         log.message("[\(type(of: self))].\(#function)")
 
+        view.wantsLayer = true
         report.messageDelegate = labelGreeting
         // labelGreeting.messageTextColor = .perseusYellow
     }
@@ -124,11 +118,11 @@ extension MasterViewController: MasterViewDelegate {
     }
 }
 
-// MARK: - Updates
+// MARK: - Reload
 
 extension MasterViewController {
 
-    private func updateControlDarkMode() {
+    private func reloadControlDarkMode() {
 
         // log.message("[\(type(of: self))].\(#function) \(DarkModeAgent.DarkModeUserChoice)")
 
@@ -142,7 +136,7 @@ extension MasterViewController {
         }
     }
 
-    private func updateControlLanguage() {
+    private func reloadControlLanguage() {
 
         // log.message("[\(type(of: self))].\(#function) \(AppOptions.languageOption)")
 

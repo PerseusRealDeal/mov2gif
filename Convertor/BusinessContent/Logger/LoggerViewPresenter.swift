@@ -19,7 +19,7 @@ import Foundation
 
 protocol LoggerViewDelegate: MVPViewDelegate {
     func onViewDidAppear()
-    func refreshMessages()
+    func reloadMessages()
     func clear()
 }
 
@@ -47,14 +47,13 @@ class LoggerViewPresenter: MVPPresenter {
         view?.localize()
 
         reportObservation = report.observe(\.lastMessage, options: .new) { _, _ in
-            (self.view as? LoggerViewDelegate)?.refreshMessages()
+            (self.view as? LoggerViewDelegate)?.reloadMessages()
         }
     }
 
     func viewDidAppear() {
 
         log.message("[\(type(of: self))].\(#function)")
-
         (view as? LoggerViewDelegate)?.onViewDidAppear()
     }
 
@@ -96,7 +95,6 @@ class LoggerViewPresenter: MVPPresenter {
         }
 
         log.format = item
-        log.message("[\(type(of: self))].\(#function) \(log.format)")
     }
 
     func forceLevel(_ number: Int) {
