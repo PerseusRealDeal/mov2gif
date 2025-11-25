@@ -9,7 +9,9 @@
 //
 //  Unlicensed Free Software
 //
-//  INFO: Architectural points. MVP. Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
+//  INFO:
+//   Architectural points. MVP.
+//   Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
 //
 //  This is SelfieViewController.swift, SelfieWindowController.storyboard
 //
