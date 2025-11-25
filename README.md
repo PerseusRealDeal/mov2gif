@@ -40,6 +40,7 @@
 * [Points taken into account](#Points-taken-into-account)
 * [License](#License)
     * [Other required licenses details](#Other-required-licenses-details)
+    * [Unlicensed free subcomponents](#Unlicensed-free-subcomponents)
 * [Credits](#Credits)
 * [Author](#Author)
 
@@ -98,6 +99,7 @@
 - [Git Config](/.gitignore)
 - [CPL Config](/T3Project/Configuration/CPLConfig.json)
 - SwiftLint shell script as a build phase (SwiftLint preinstallation required)
+- Architectural points. MVP applied. Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
 
 # License
 
@@ -117,6 +119,11 @@ Copyright © 7534 PerseusRealDeal
 © PerseusRealDeal **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © 2025 The SwiftLint Contributors **for** SwiftLint</br>
 © GitHub **for** GitHub Action cirruslabs/swiftlint-action@v1</br>
+
+## Unlicensed free subcomponents
+
+- Selfie (window) module
+- Logger (window) module
 
 # Credits
 
@@ -141,13 +148,11 @@ Copyright © 7534 PerseusRealDeal
     <td>tested by</td>
     <td>Mikhail Zhigulin</td>
 </tr>
-<!--
 <tr>
     <td>Artwork</td>
     <td>expressed by</td>
-    <td>Mikhail Zhigulin of Novosibirsk</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
--->
 <tr>
     <td>Russian Translation</td>
     <td>prepared by</td>
@@ -160,9 +165,7 @@ Copyright © 7534 PerseusRealDeal
 </tr>
 </table>
 
-<!--
 - Artwork tool: [GIMP](https://www.gimp.org/) / [2.10.36](https://download.gimp.org/gimp/v2.10/osx/) for macOS 10.12 Sierra or newer
--->
 - Language support: [Reverso](https://www.reverso.net/) 
 - Git clients: [SmartGit](https://syntevo.com/) and [GitHub Desktop](https://github.com/apps/desktop)
 
