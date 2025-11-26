@@ -5,6 +5,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Dates in this file meets Gregorian calendar. Date in format YYYY-MM-DD.
 
+## [0.0.3] - [2025-11-30], Developer Release
+
+### Added
+
+- Selfie window.
+- Logger window.
+- Localization switcher.
+- End-user MessageLabel.
+
+### Removed
+
+- Main menu.
+
+### Updated
+
+- Localization.
+- DarkMode appearance.
+- PDM dependency to v2.1.1.
+- CPL dependency to v1.7.0.
+
 ## [0.0.2] - [2025-11-19], Developer Release
 
 ### Added

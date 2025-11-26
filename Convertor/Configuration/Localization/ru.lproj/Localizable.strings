@@ -9,8 +9,47 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"Product Name" = "Ветка macOS";
+"Product Name" = "mov2gif";
 "Greetings" = "Рады приветствовать!";
-"Exit" = "Завершить работу";
-"Settings..." = "";
-"Preferences..." = "";
+"Have a great time" = "Не скучного времяпрепровождения";
+
+"Button: Selfie" = "Себяшка";
+"Button: Logger" = "Журнал";
+
+"Message: Dark Mode forced" = "Режим подсветки изменен";
+"Message: Language forced" = "Язык переключен";
+
+"DarkMode: Auto" = "Среда";
+"DarkMode: On" = "Темная";
+"DarkMode: Off" = "Светлая";
+
+"Language: System" = "Среда";
+"Language: Russian" = "Русский";
+"Language: English" = "Английский";
+
+/* Selfie Screen – SelfieWindowController, SelfieViewController */
+
+"Label: Copyright Notice" = "Охраняется авторским правом © 7534 Михаил A. Жигулин из Новосибирска.";
+"Label: Copyright Details" = "Летоисчесление ведется от Сотворения Мира в Звездном Храме в соответствии со славянским календарем в котором первый месяц сентябрь.";
+
+"Label: Credits" = "Работы выполнены";
+
+"Label: Balancing and Control" = "Контроль и Балансировка";
+"Label: Writing" = "Кодирование";
+"Label: Documenting" = "Документирование";
+"Label: Artworking" = "Изобразительное Искусство";
+"Label: EN Expectation" = "Английский";
+"Label: RU Expectation" = "Русский";
+
+"Label: Author" = "Михаил А. Жигулин";
+
+"Title: Convertor" = "Конвертор";
+"Label: The App Version" = "Выпуск";
+
+"Button: The App Source Code" = "Исходники изделия";
+"Button: The Technological Tree" = "Золотое дерево";
+
+"Button: License" = "Текст лицензии";
+"Button: Terms & Conditions" = "Соглашение";
+
+"Button: Close" = "Исчезнуть";

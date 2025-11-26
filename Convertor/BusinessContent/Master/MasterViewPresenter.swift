@@ -1,5 +1,5 @@
 //
-//  MainWindowPresenter.swift
+//  MasterViewPresenter.swift
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7532 (18.11.2025).
@@ -17,17 +17,17 @@ import Foundation
 
 // MARK: - MainWindow Communication
 
-protocol MainViewDelegate: MVPViewDelegate {
-    func updateDarkModeOption(selected: Int)
+protocol MasterViewDelegate: MVPViewDelegate {
+    func onViewDidAppear()
 }
 
 // MARK: - MainWindow Business Logic
 
-class MainViewPresenter: MVPPresenter {
+class MasterViewPresenter: MVPPresenter {
 
     // MARK: - Initialization
 
-    init(view: MainViewDelegate) {
+    init(view: MasterViewDelegate) {
         super.init(view: view)
     }
 
@@ -37,22 +37,22 @@ class MainViewPresenter: MVPPresenter {
 
         log.message("[\(type(of: self))].\(#function)")
 
+        view?.setupUI()
+
         view?.makeUp()
         view?.localize()
-
-        refresh()
     }
 
     func viewDidAppear() {
 
         log.message("[\(type(of: self))].\(#function)")
 
-        refresh()
+        (view as? MasterViewDelegate)?.onViewDidAppear()
     }
 
     // MARK: - Business Contract
 
-    func changeDarkModeValue(selected: Int) {
+    func forceDarkMode(_ selected: Int) {
         switch selected {
         case 0:
             DarkModeAgent.force(.off)
@@ -61,27 +61,28 @@ class MainViewPresenter: MVPPresenter {
         case 2:
             DarkModeAgent.force(.auto)
         default:
-            break
+            return
         }
+
+        log.message("Message: Dark Mode forced".localizedValue, .notice, .custom, .enduser)
+    }
+
+    func forceLanguage(_ selected: Int) {
+        switch selected {
+        case 0:
+            AppOptions.languageOption = .en
+        case 1:
+            AppOptions.languageOption = .ru
+        case 2:
+            AppOptions.languageOption = .system
+        default:
+            return
+        }
+
+        globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
+
+        log.message("Message: Language forced".localizedValue, .notice, .custom, .enduser)
     }
 
     // MARK: - Realization
-
-    private func refresh() {
-        updateDarkModeOption()
-    }
-
-    private func updateDarkModeOption() {
-
-        guard let view = view as? MainViewDelegate else { return }
-
-        switch DarkModeAgent.DarkModeUserChoice {
-        case .auto:
-            view.updateDarkModeOption(selected: 2)
-        case .on:
-            view.updateDarkModeOption(selected: 1)
-        case .off:
-            view.updateDarkModeOption(selected: 0)
-        }
-    }
 }

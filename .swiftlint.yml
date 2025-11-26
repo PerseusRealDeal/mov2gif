@@ -11,6 +11,7 @@ disabled_rules:
 # - colon
 # - comma
 # - control_statement
+  - inclusive_language
 
 force_cast: warning
 
