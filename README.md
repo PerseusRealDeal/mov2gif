@@ -17,7 +17,7 @@
 
 > The Crown of Stars:
 
-[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.6.1-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
+[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.7.0-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
 [![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.1.0-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
 
 ## Our Terms
@@ -72,7 +72,7 @@
 
 | Type    | Name                                                                                                                                                                  | License |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Package | [ConsolePerseusLogger](https://github.com/perseusrealdeal/ConsolePerseusLogger) / [1.6.1](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.6.1) | MIT     |
+| Package | [ConsolePerseusLogger](https://github.com/perseusrealdeal/ConsolePerseusLogger) / [1.7.0](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.7.0) | MIT     |
 | Package | [PerseusDarkMode](https://github.com/perseusrealdeal/PerseusDarkMode) / [2.1.0](https://github.com/perseusrealdeal/PerseusDarkMode/releases/tag/2.1.0)                | MIT     |
 
 # Third-party software

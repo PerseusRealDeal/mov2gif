@@ -20,8 +20,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Updated
 
 - Localization.
-- CPL dependency to v1.6.1.
 - DarkMode appearance.
+- CPL dependency to v1.7.0.
 
 ## [0.0.2] - [2025-11-19], Developer Release
 

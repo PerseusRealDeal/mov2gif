@@ -18,7 +18,7 @@ import Cocoa
 // MARK: - The log report
 
 let report = PerseusLogger.Report()
-log.customActionOnMessage = report.report(_:_:_:_:_:_:)
+log.customActionOnMessage = report.report(_:)
 
 // MARK: - The logger
 

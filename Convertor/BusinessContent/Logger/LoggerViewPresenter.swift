@@ -75,6 +75,13 @@ class LoggerViewPresenter: MVPPresenter {
         view?.localize()
 
         reportObservation = report.observe(\.lastMessage, options: .new) { _, _ in
+
+            // Debug for debug leads to the code crash case. Don't try like this...
+
+            // Infinite recursion leads to stack overflow.
+            // You must be careful to avoid infinite recursion.
+
+            // log.message("[\(type(of: self))].\(#function)") // Case to the code crash! 
             (self.view as? LoggerViewDelegate)?.reloadMessages()
         }
     }
