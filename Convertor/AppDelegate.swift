@@ -19,10 +19,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
 
-        log.message("Launching with business matter purpose...", .info)
         log.message("[\(type(of: self))].\(#function)")
 
         DarkModeAgent.force(DarkModeUserChoice)
+        globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
+
+        log.message("Ready with business matter purpose...", .info)
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

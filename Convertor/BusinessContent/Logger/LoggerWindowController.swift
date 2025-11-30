@@ -1,8 +1,8 @@
 //
-//  MVPPresenter.swift
+//  LoggerWindowController.swift, LoggerWindowController.storyboard
 //  The Technological Tree
 //
-//  Created by Mikhail Zhigulin of Novosibirsk in 7534 (19.11.2025).
+//  Created by Mikhail Zhigulin of Novosibirsk in 7534 (23.11.2025).
 //
 //  The year starts from the creation of the world in the Star temple
 //  according to a Slavic calendar. September, the 1st of Slavic year.
@@ -13,7 +13,7 @@
 //   Architectural points. MVP.
 //   Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
 //
-//  This is MVPPresenter.swift
+//  This is LoggerWindowController.swift, LoggerWindowController.storyboard
 //
 //  This is free and unencumbered software released into the public domain.
 //
@@ -41,29 +41,48 @@
 //  For more information, please refer to <http://unlicense.org/>
 //
 
-import Foundation
+import Cocoa
 
-// MARK: - Common MVP Business Logic (delegated)
+extension LoggerWindowController {
 
-class MVPPresenter {
+    class func storyboardInstance() -> LoggerWindowController {
 
-    let darkModeObserver = DarkModeObserver()
-    weak var view: MVPViewDelegate? // Weak reference to prevent retain cycles
+        let storyboard = NSStoryboard(name: String(describing: self), bundle: nil)
+        let screen = storyboard.instantiateInitialController() as? LoggerWindowController
 
-    init(view: MVPViewDelegate) {
-        self.view = view
+        if let vc = screen?.contentViewController as? LoggerViewController {
+            vc.presenter = LoggerViewPresenter(view: vc)
+            vc.presenter?.viewDidLoad()
+        }
 
-        darkModeObserver.action = { _ in self.view?.makeUp() }
+        // Do default setup; don't set any parameter causing loadView up, breaks unit tests
 
-        AppGlobals.nc.addObserver(
-            self,
-            selector: #selector(self.localize),
-            name: NSNotification.Name.languageSwitchedManuallyNotification,
-            object: nil
-        )
+        // screen?.modalTransitionStyle = UIModalTransitionStyle.partialCurl
+        // screen?.view.backgroundColor = UIColor.yellow
+
+        return screen ?? LoggerWindowController()
+    }
+}
+
+public class LoggerWindowController: NSWindowController, NSWindowDelegate {
+
+    public override func windowDidLoad() {
+        super.windowDidLoad()
+
+        log.message("[\(type(of: self))].\(#function)")
+
+        if let window = self.window {
+            window.delegate = self
+        } else {
+            log.message("[\(type(of: self))].\(#function) window instance is nil", .error)
+        }
     }
 
-    @objc private func localize() {
-        view?.localize()
+    public func windowShouldClose(_ sender: NSWindow) -> Bool {
+
+        log.message("[\(type(of: self))].\(#function)")
+        self.window?.orderOut(sender)
+
+        return false
     }
 }

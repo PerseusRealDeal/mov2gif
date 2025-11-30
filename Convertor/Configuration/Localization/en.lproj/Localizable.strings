@@ -9,8 +9,47 @@
 
 /* The name of executable file is > target > build settings > product name */
 
-"Product Name" = "Branch macOS";
+"Product Name" = "mov2gif";
 "Greetings" = "Hello world!";
-"Exit" = "Exit";
-"Settings..." = "Settings...";
-"Preferences..." = "Preferences...";
+"Have a great time" = "Have a great time";
+
+"Button: Selfie" = "Selfie";
+"Button: Logger" = "Logger";
+
+"Message: Dark Mode forced" = "Dark Mode forced";
+"Message: Language forced" = "Language forced";
+
+"DarkMode: Auto" = "System";
+"DarkMode: On" = "Dark";
+"DarkMode: Off" = "Light";
+
+"Language: System" = "System";
+"Language: Russian" = "Russian";
+"Language: English" = "English";
+
+/* Selfie Screen – SelfieWindowController, SelfieViewController */
+
+"Label: Copyright Notice" = "Copyright © 7534 Mikhail Zhigulin of Novosibirsk";
+"Label: Copyright Details" = "The year starts from the creation of the world in the Star temple according to a Slavic calendar. September, the 1st of Slavic year.";
+
+"Label: Credits" = "Credits";
+
+"Label: Balancing and Control" = "Balance and Control by";
+"Label: Writing" = "Written by";
+"Label: Documenting" = "Documented by";
+"Label: Artworking" = "Artwork by";
+"Label: EN Expectation" = "English by";
+"Label: RU Expectation" = "Russian by";
+
+"Label: Author" = "Mikhail Zhigulin";
+
+"Title: Convertor" = "Convertor";
+"Label: The App Version" = "Version";
+
+"Button: The App Source Code" = "The App Source Code";
+"Button: The Technological Tree" = "The Technological Tree";
+
+"Button: License" = "License";
+"Button: Terms & Conditions" = "Terms & Conditions";
+
+"Button: Close" = "Close";

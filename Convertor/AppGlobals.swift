@@ -15,6 +15,13 @@
 
 import Cocoa
 
+var isHighSierra: Bool { // true HighSierra, false otherwise
+    if #available(macOS 10.14, *) {
+        return false
+    } // For HighSierra.
+    return true
+}
+
 struct AppGlobals {
 
     // MARK: - Constants
@@ -39,6 +46,8 @@ struct AppGlobals {
 
     // MARK: - Custom Services
 
+    public let languageSwitcher: LanguageSwitcher
+
     // MARK: - Init
 
     init() {
@@ -46,6 +55,7 @@ struct AppGlobals {
 
         // Init custom services here.
 
+        self.languageSwitcher = LanguageSwitcher.shared
     }
 
     // MARK: - Common system relative functions
@@ -89,5 +99,32 @@ struct AppGlobals {
         // Instructions before quit.
 
         app.terminate(appDelegate)
+    }
+
+    static func openDefaultBrowser(string link: String) {
+
+        log.message("[\(type(of: self))].\(#function)")
+
+        guard let url = NSURL(string: link) as URL? else {
+            log.message("[\(type(of: self))].\(#function)", .error)
+            return
+        }
+
+        _ = NSWorkspace.shared.open(url) ?
+        log.message("[\(type(of: self))].\(#function) - default browser opened") :
+        log.message("[\(type(of: self))].\(#function) - default browser not opened")
+    }
+}
+
+func loadJsonLogProfile(_ name: String) -> (status: Bool, info: String) {
+
+    if let path = Bundle.main.url(forResource: name, withExtension: "json") {
+        if log.loadConfig(path) {
+            return (true, "Options successfully reseted")
+        } else {
+            return (false, "Failed to reset options")
+        }
+    } else {
+        return (false, "Failed to create URL")
     }
 }

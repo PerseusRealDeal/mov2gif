@@ -15,49 +15,32 @@
 
 import Cocoa
 
-// MARK: - Log Report
+// MARK: - The log report
 
 let report = PerseusLogger.Report()
-log.customActionOnMessage = report.report(_:_:_:_:_:_:)
+log.customActionOnMessage = report.report(_:)
 
-// MARK: - Logger
+// MARK: - The logger
 
-// log.turned = .off
-// dmlog.turned = .off
-
-var loadedInfo = ""
-
-if let path = Bundle.main.url(forResource: "CPLConfig", withExtension: "json") {
-    if log.loadConfig(path) {
-        loadedInfo = "Options successfully loaded!"
-    } else {
-        loadedInfo = "Failed to load options!"
-    }
-} else {
-    loadedInfo = "Failed to create URL!"
-}
-
-log.message(loadedInfo)
+log.message(loadJsonLogProfile("CPLConfig").info)
 log.message("The app's start point...", .info)
 
-// MARK: - Construct the app's top elements
+// MARK: - The app's top elements
+
+let globals = AppGlobals()
 
 let app = NSApplication.shared
 
 let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type
 let appDelegate = appPurpose?.init() ?? AppDelegate()
 
-let screen = MainWindowController.storyboardInstance()
-let mainMenu = NSNib(nibNamed: NSNib.Name("MainMenu"), bundle: nil)
+let screen = MasterWindowController.storyboardInstance()
 
-// MARK: - Make the app run
+// MARK: - The app run
 
 app.setActivationPolicy(.regular)
-
-mainMenu?.instantiate(withOwner: app, topLevelObjects: nil)
 screen.window?.makeKeyAndOrderFront(nil)
 
 app.delegate = appDelegate as? NSApplicationDelegate
-
 app.activate(ignoringOtherApps: true)
 app.run()

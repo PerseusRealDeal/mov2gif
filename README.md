@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/main.yml)
 [![Style](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml/badge.svg)](https://github.com/perseusrealdeal/mov2gif/actions/workflows/swiftlint.yml)
-![Version](https://img.shields.io/badge/Version-0.0.2-green.svg)
+![Version](https://img.shields.io/badge/Version-0.0.3-green.svg)
 [![Platforms](https://img.shields.io/badge/Platform-macOS%2010.13+-orange.svg)](https://en.wikipedia.org/wiki/MacOS_version_history)
 [![Xcode](https://img.shields.io/badge/Xcode-14.2+-red.svg)](https://en.wikipedia.org/wiki/Xcode)
 [![Swift](https://img.shields.io/badge/Swift-5-orange.svg)](https://docs.swift.org/swift-book/RevisionHistory/RevisionHistory.html)
@@ -17,8 +17,8 @@
 
 > The Crown of Stars:
 
-[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.6.0-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
-[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.1.0-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
+[![ConsolePerseusLogger](http://img.shields.io/:ConsolePerseusLogger-1.7.0-green.svg)](https://github.com/perseusrealdeal/ConsolePerseusLogger.git)
+[![PerseusDarkMode](http://img.shields.io/:PerseusDarkMode-2.1.1-green.svg)](https://github.com/perseusrealdeal/PerseusDarkMode.git)
 
 ## Our Terms
 
@@ -39,7 +39,8 @@
 * [Third-party software](#Third-party-software)
 * [Points taken into account](#Points-taken-into-account)
 * [License](#License)
-    * [Other Required Licenses Details](#Other-Required-Licenses-Details)
+    * [Other required licenses details](#Other-required-licenses-details)
+    * [Unlicensed free subcomponents](#Unlicensed-free-subcomponents)
 * [Credits](#Credits)
 * [Author](#Author)
 
@@ -71,8 +72,8 @@
 
 | Type    | Name                                                                                                                                                                  | License |
 | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| Package | [ConsolePerseusLogger](https://github.com/perseusrealdeal/ConsolePerseusLogger) / [1.6.0](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.6.0) | MIT     |
-| Package | [PerseusDarkMode](https://github.com/perseusrealdeal/PerseusDarkMode) / [2.1.0](https://github.com/perseusrealdeal/PerseusDarkMode/releases/tag/2.1.0)                | MIT     |
+| Package | [ConsolePerseusLogger](https://github.com/perseusrealdeal/ConsolePerseusLogger) / [1.7.0](https://github.com/perseusrealdeal/ConsolePerseusLogger/releases/tag/1.7.0) | MIT     |
+| Package | [PerseusDarkMode](https://github.com/perseusrealdeal/PerseusDarkMode) / [2.1.1](https://github.com/perseusrealdeal/PerseusDarkMode/releases/tag/2.1.1)                | MIT     |
 
 # Third-party software
 
@@ -98,6 +99,7 @@
 - [Git Config](/.gitignore)
 - [CPL Config](/T3Project/Configuration/CPLConfig.json)
 - SwiftLint shell script as a build phase (SwiftLint preinstallation required)
+- Architectural points. MVP applied. Based on [Gist](https://gist.github.com/PerseusRealDeal/5301e90881732f0cd0040e2083a78a3d).
 
 # License
 
@@ -111,12 +113,17 @@ Copyright © 7534 PerseusRealDeal
 
 [LICENSE](/LICENSE) for details.
 
-## Other Required Licenses Details
+## Other required licenses details
 
 © Mikhail A. Zhigulin of Novosibirsk **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © PerseusRealDeal **for** ConsolePerseusLogger, PerseusDarkMode</br>
 © 2025 The SwiftLint Contributors **for** SwiftLint</br>
 © GitHub **for** GitHub Action cirruslabs/swiftlint-action@v1</br>
+
+## Unlicensed free subcomponents
+
+- Selfie (window) module
+- Logger (window) module
 
 # Credits
 
@@ -145,7 +152,7 @@ Copyright © 7534 PerseusRealDeal
 <tr>
     <td>Artwork</td>
     <td>expressed by</td>
-    <td>Mikhail Zhigulin of Novosibirsk</td>
+    <td>Mikhail Zhigulin</td>
 </tr>
 -->
 <tr>
@@ -159,7 +166,6 @@ Copyright © 7534 PerseusRealDeal
     <td>Mikhail Zhigulin</td>
 </tr>
 </table>
-
 <!--
 - Artwork tool: [GIMP](https://www.gimp.org/) / [2.10.36](https://download.gimp.org/gimp/v2.10/osx/) for macOS 10.12 Sierra or newer
 -->

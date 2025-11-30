@@ -2,9 +2,15 @@
 //  BundleTests.swift
 //  PerseusTests
 //
-//  Created by Mikhail A. Zhigulin of Novosibirsk.
+//  Created by Mikhail Zhigulin in 7534.
 //
-//  Unlicensed Free Software.
+//  Copyright © 7534 Mikhail Zhigulin of Novosibirsk
+//  Copyright © 7534 PerseusRealDeal
+//
+//  The year starts from the creation of the world in the Star temple
+//  according to a Slavic calendar. September, the 1st of Slavic year.
+//
+//  See LICENSE for details. All rights reserved.
 //
 
 import XCTest
@@ -12,7 +18,7 @@ import XCTest
 
 // MARK: - Release notes
 
-let bundleShortVersion = "0.0.2"
+let bundleShortVersion = "0.0.3"
 let bundleVersion = "0"
 
 // MARK: - Customer expectations, requirements
