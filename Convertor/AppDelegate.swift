@@ -24,7 +24,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         DarkModeAgent.force(DarkModeUserChoice)
         globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
 
-        log.message("Ready with business matter purpose...", .info)
+        log.message("Started with business matter purpose...", .info)
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {

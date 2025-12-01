@@ -29,6 +29,8 @@
 
 /* Selfie Screen – SelfieWindowController, SelfieViewController */
 
+"Title: Convertor" = "Project — Convertor mov2gif";
+
 "Label: Copyright Notice" = "Copyright © 7534 Mikhail Zhigulin of Novosibirsk";
 "Label: Copyright Details" = "The year starts from the creation of the world in the Star temple according to a Slavic calendar. September, the 1st of Slavic year.";
 
@@ -42,8 +44,6 @@
 "Label: RU Expectation" = "Russian by";
 
 "Label: Author" = "Mikhail Zhigulin";
-
-"Title: Convertor" = "Convertor";
 "Label: The App Version" = "Version";
 
 "Button: The App Source Code" = "The App Source Code";

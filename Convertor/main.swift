@@ -15,32 +15,31 @@
 
 import Cocoa
 
-// MARK: - The log report
-
-let report = PerseusLogger.Report()
-log.customActionOnMessage = report.report(_:)
-
 // MARK: - The logger
 
-log.message(loadJsonLogProfile("CPLConfig").info)
-log.message("The app's start point...", .info)
+let report = PerseusLogger.Report()
 
-// MARK: - The app's top elements
+log.customActionOnMessage = report.report(_:)
+log.message(loadCPLProfile("CPLConfig").info)
+
+// MARK: - The start line
+
+log.message("The start line...", .info)
 
 let globals = AppGlobals()
 
 let app = NSApplication.shared
-
 let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type
 let appDelegate = appPurpose?.init() ?? AppDelegate()
-
 let screen = MasterWindowController.storyboardInstance()
 
-// MARK: - The app run
+// MARK: - The app's run
+
+log.message("The app is about to run...", .info)
 
 app.setActivationPolicy(.regular)
 screen.window?.makeKeyAndOrderFront(nil)
-
 app.delegate = appDelegate as? NSApplicationDelegate
 app.activate(ignoringOtherApps: true)
+
 app.run()
