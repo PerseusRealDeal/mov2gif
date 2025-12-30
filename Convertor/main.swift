@@ -31,14 +31,16 @@ let globals = AppGlobals()
 let app = NSApplication.shared
 let appPurpose = NSClassFromString("TestingAppDelegate") as? NSObject.Type
 let appDelegate = appPurpose?.init() ?? AppDelegate()
-let screen = MasterWindowController.storyboardInstance()
+
+Coordinator.start()
 
 // MARK: - The app's run
 
 log.message("The app is about to run...", .info)
 
 app.setActivationPolicy(.regular)
-screen.window?.makeKeyAndOrderFront(nil)
+Coordinator.masterWindowToFront()
+
 app.delegate = appDelegate as? NSApplicationDelegate
 app.activate(ignoringOtherApps: true)
 

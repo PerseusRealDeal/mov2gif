@@ -133,7 +133,7 @@ extension LoggerViewController: LoggerViewDelegate {
 
     func setupUI() {
         log.message("[\(type(of: self))].\(#function)")
-        texViewMessages.backgroundColor = .clear
+        // texViewMessages.backgroundColor = .clear
     }
 
     func makeUp() {

@@ -1,5 +1,5 @@
 //
-//  AppUserDefaults.swift
+//  AppOptions.swift
 //  mov2gif
 //
 //  Created by Mikhail Zhigulin in 7534 (21.11.2025).
@@ -33,7 +33,7 @@ class AppOptions {
         get {
             // Load enum Int value
 
-            let ud = AppGlobals.ud
+            let ud = AppGlobals.userDefaults
 
             let rawValue = ud.valueExists(forKey: LANGUAGE_OPTION_KEY) ?
                 ud.integer(forKey: LANGUAGE_OPTION_KEY) : LANGUAGE_OPTION_DEFAULT.rawValue
@@ -48,7 +48,7 @@ class AppOptions {
             return LANGUAGE_OPTION_DEFAULT
         }
         set {
-            AppGlobals.ud.setValue(newValue.rawValue, forKey: LANGUAGE_OPTION_KEY)
+            AppGlobals.userDefaults.setValue(newValue.rawValue, forKey: LANGUAGE_OPTION_KEY)
         }
     }
 }

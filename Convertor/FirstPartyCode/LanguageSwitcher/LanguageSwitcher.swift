@@ -4,9 +4,6 @@
 //
 //  Created by Mikhail Zhigulin in 7532.
 //
-//  INFO: Origionally from my "The Dark Moon" open-source project.
-//  https://github.com/PerseusRealDeal/TheDarkMoon
-//
 //  Copyright © 7532 Mikhail Zhigulin of Novosibirsk
 //  Copyright © 7532 PerseusRealDeal
 //
@@ -60,6 +57,10 @@ class LanguageSwitcher: NSObject {
         }
     }
 
+    public static func switchLanguageIfNeeded(_ currentUserChoice: LanguageOption) {
+        shared.switchLanguageIfNeeded(currentUserChoice)
+    }
+
     public func switchLanguageIfNeeded(_ currentUserChoice: LanguageOption) {
 
         var switchToLanguage = ""
@@ -85,6 +86,7 @@ class LanguageSwitcher: NSObject {
         String.bundle = Bundle.init(path: path)
 
         // Refresh localization
-        AppGlobals.nc.post(Notification.init(name: .languageSwitchedManuallyNotification))
+        let nc = AppGlobals.notificationCenter
+        nc.post(Notification.init(name: .languageSwitchedManuallyNotification))
     }
 }

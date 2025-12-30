@@ -76,7 +76,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="0nr-ZQ-irC"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Button Selfie" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CB3-kh-m4w">
+                                <buttonCell key="cell" type="push" title="Button Selfie" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CB3-kh-m4w">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -86,7 +86,7 @@
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eTV-VF-Omp">
                                 <rect key="frame" x="355" y="190" width="122" height="32"/>
-                                <buttonCell key="cell" type="push" title="Button Logger" bezelStyle="rounded" alignment="left" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pVW-9y-iET">
+                                <buttonCell key="cell" type="push" title="Button Logger" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="pVW-9y-iET">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>

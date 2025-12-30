@@ -41,8 +41,8 @@ struct AppGlobals {
 
     // MARK: - System Services
 
-    static let ud = UserDefaults.standard
-    static let nc = NotificationCenter.default
+    static let userDefaults = UserDefaults.standard
+    static let notificationCenter = NotificationCenter.default
 
     // MARK: - Custom Services
 
@@ -59,20 +59,6 @@ struct AppGlobals {
     }
 
     // MARK: - Common system relative functions
-
-    static func clickWebLink(string link: String) {
-
-        log.message("[\(type(of: self))].\(#function)")
-
-        guard let url = NSURL(string: link) as URL? else {
-            log.message("[\(type(of: self))].\(#function)", .error)
-            return
-        }
-
-        _ = NSWorkspace.shared.open(url) ?
-            log.message("[\(type(of: self))].\(#function) - Web browser opened.") :
-            log.message("[\(type(of: self))].\(#function) - Web browser not opened.")
-    }
 
     static func makeTheAppRun(_ name: String?) {
 

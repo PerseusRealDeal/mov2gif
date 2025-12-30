@@ -21,8 +21,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
         log.message("[\(type(of: self))].\(#function)")
 
+        LanguageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
         DarkModeAgent.force(DarkModeUserChoice)
-        globals.languageSwitcher.switchLanguageIfNeeded(AppOptions.languageOption)
 
         log.message("Started with business matter purpose...", .info)
     }
