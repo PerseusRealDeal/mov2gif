@@ -38,14 +38,6 @@ extension MasterWindowController {
 
 class MasterWindowController: NSWindowController, NSWindowDelegate {
 
-    private lazy var logger = { () -> LoggerWindowController in
-        return LoggerWindowController.storyboardInstance()
-    }()
-
-    private lazy var selfie = { () -> SelfieWindowController in
-        return SelfieWindowController.storyboardInstance()
-    }()
-
     // MARK: - Life Circle
 
     override func windowDidLoad() {
@@ -63,11 +55,11 @@ class MasterWindowController: NSWindowController, NSWindowDelegate {
     // MARK: - Actions
 
     @IBAction func showSelfieWindow(_ sender: NSMenuItem) {
-        selfie.showWindow(sender)
+        Coordinator.shared.screenSelfie.showWindow(sender)
     }
 
     @IBAction func showLoggerWindow(_ sender: NSMenuItem) {
-        logger.showWindow(sender)
+        Coordinator.shared.screenLogger.showWindow(sender)
     }
 
     // MARK: - NSWindowDelegate

@@ -8,48 +8,48 @@
 	<string>Рады приветствовать!</string>
 	<key>Have a great time</key>
 	<string>Не скучного времяпрепровождения</string>
-    <key>/* Selfie Screen */</key>
-    <string></string>
-    <key>Title: Convertor</key>
-    <string>Конвертор</string>
-    <key>Label: The App Version</key>
-    <string>Выпуск</string>
-    <key>Button: The App Source Code</key>
-    <string>Исходники изделия</string>
-    <key>Button: The Technological Tree</key>
-    <string>Золотое дерево</string>
-    <key>Button: License</key>
-    <string>Текст лицензии</string>
-    <key>Button: Terms &amp; Conditions</key>
-    <string>Соглашение</string>
-    <key>Button: Close</key>
-    <string>Исчезнуть</string>
+	<key>/* Selfie Screen */</key>
+	<string></string>
+	<key>Title: Convertor</key>
+	<string>Проект — Конвертор mov2gif</string>
+	<key>Label: The App Version</key>
+	<string>Выпуск</string>
+	<key>Button: The App Source Code</key>
+	<string>Исходники изделия</string>
+	<key>Button: The Technological Tree</key>
+	<string>Золотое дерево</string>
+	<key>Button: License</key>
+	<string>Текст лицензии</string>
+	<key>Button: Terms &amp; Conditions</key>
+	<string>Соглашение</string>
+	<key>Button: Close</key>
+	<string>Исчезнуть</string>
 	<key>Label: Copyright Notice</key>
 	<string>Охраняется авторским правом © 7534 Михаил A. Жигулин из Новосибирска.</string>
 	<key>Label: Copyright Details</key>
 	<string>Летоисчесление ведется от Сотворения Мира в Звездном Храме в соответствии со славянским календарем в котором первый месяц сентябрь.</string>
-    <key>Label: Credits</key>
-    <string>Работы выполнены</string>
-    <key>Label: Balancing and Control</key>
-    <string>Контроль и Балансировка</string>
-    <key>Label: Writing</key>
-    <string>Кодирование</string>
-    <key>Label: Documenting</key>
-    <string>Документирование</string>
-    <key>Label: Artworking</key>
-    <string>Изобразительное Искусство</string>
-    <key>Label: EN Expectation</key>
-    <string>Английский</string>
-    <key>Label: RU Expectation</key>
-    <string>Русский</string>
-    <key>Label: Author</key>
-    <string>Михаил А. Жигулин</string>
-    <key>/* Main Screen */</key>
-    <string></string>
+	<key>Label: Credits</key>
+	<string>Работы выполнены</string>
+	<key>Label: Balancing and Control</key>
+	<string>Контроль и Балансировка</string>
+	<key>Label: Writing</key>
+	<string>Кодирование</string>
+	<key>Label: Documenting</key>
+	<string>Документирование</string>
+	<key>Label: Artworking</key>
+	<string>Изобразительное Искусство</string>
+	<key>Label: EN Expectation</key>
+	<string>Английский</string>
+	<key>Label: RU Expectation</key>
+	<string>Русский</string>
+	<key>Label: Author</key>
+	<string>Михаил А. Жигулин</string>
+	<key>/* Main Screen */</key>
+	<string></string>
 	<key>Button: Selfie</key>
 	<string>Себяшка</string>
-    <key>Button: Logger</key>
-    <string>Журнал</string>
+	<key>Button: Logger</key>
+	<string>Журнал</string>
 	<key>Message: Dark Mode forced</key>
 	<string>Режим подсветки изменен</string>
 	<key>Message: Language forced</key>

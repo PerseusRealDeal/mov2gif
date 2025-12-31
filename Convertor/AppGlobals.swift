@@ -41,8 +41,8 @@ struct AppGlobals {
 
     // MARK: - System Services
 
-    static let ud = UserDefaults.standard
-    static let nc = NotificationCenter.default
+    static let userDefaults = UserDefaults.standard
+    static let notificationCenter = NotificationCenter.default
 
     // MARK: - Custom Services
 
@@ -59,20 +59,6 @@ struct AppGlobals {
     }
 
     // MARK: - Common system relative functions
-
-    static func clickWebLink(string link: String) {
-
-        log.message("[\(type(of: self))].\(#function)")
-
-        guard let url = NSURL(string: link) as URL? else {
-            log.message("[\(type(of: self))].\(#function)", .error)
-            return
-        }
-
-        _ = NSWorkspace.shared.open(url) ?
-            log.message("[\(type(of: self))].\(#function) - Web browser opened.") :
-            log.message("[\(type(of: self))].\(#function) - Web browser not opened.")
-    }
 
     static func makeTheAppRun(_ name: String?) {
 
@@ -111,20 +97,19 @@ struct AppGlobals {
         }
 
         _ = NSWorkspace.shared.open(url) ?
-        log.message("[\(type(of: self))].\(#function) - default browser opened") :
-        log.message("[\(type(of: self))].\(#function) - default browser not opened")
+        log.message("[\(type(of: self))].\(#function) Default browser opened.") :
+        log.message("[\(type(of: self))].\(#function) Default browser not opened.")
     }
 }
 
-func loadJsonLogProfile(_ name: String) -> (status: Bool, info: String) {
-
+func loadCPLProfile(_ name: String) -> (status: Bool, info: String) {
     if let path = Bundle.main.url(forResource: name, withExtension: "json") {
         if log.loadConfig(path) {
-            return (true, "Options successfully reseted")
+            return (true, "Options successfully reseted.")
         } else {
-            return (false, "Failed to reset options")
+            return (false, "Failed to reset options.")
         }
     } else {
-        return (false, "Failed to create URL")
+        return (false, "Failed to create URL.")
     }
 }

@@ -44,9 +44,7 @@ class MasterViewPresenter: MVPPresenter {
     }
 
     func viewDidAppear() {
-
         log.message("[\(type(of: self))].\(#function)")
-
         (view as? MasterViewDelegate)?.onViewDidAppear()
     }
 
